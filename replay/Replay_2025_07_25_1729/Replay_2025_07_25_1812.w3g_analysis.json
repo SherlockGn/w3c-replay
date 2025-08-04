@@ -1,0 +1,817 @@
+{
+  "filename": "C:\\Users\\tianheg\\Documents\\coding\\w3c-replay\\replay\\Replay_2025_07_25_1729\\Replay_2025_07_25_1812.w3g",
+  "game": {
+    "player_count": 4,
+    "name": "å½å°å±åç½åçæ¸¸æ (tx",
+    "speed": "Fast",
+    "visibility": "Default",
+    "observers": "No Observers",
+    "teams_together": true,
+    "lock_teams": true,
+    "full_shared_unit_control": false,
+    "random_hero": false,
+    "random_races": false,
+    "creator": "txd",
+    "map": "Maps\\FrozenThrone\\(4)TwistedMeadows.w3x",
+    "slots": 4,
+    "type": "Custom game",
+    "private": false,
+    "record_id": 25,
+    "record_length": 43,
+    "slot_records": 4,
+    "random_seed": 6963031,
+    "select_mode": "Team & race selectable",
+    "start_spots": 4,
+    "loser_team": 3,
+    "saver_id": 3,
+    "saver_name": "Neko",
+    "winner_team": 2
+  },
+  "teams": [
+    {
+      "1": {
+        "player_id": 1,
+        "initiator": true,
+        "name": "txd",
+        "actions_details": {
+          "Right click": 799,
+          "Select / deselect": 469,
+          "Select group hotkey": 416,
+          "Assign group hotkey": 29,
+          "Use ability": 67,
+          "Basic commands": 117,
+          "Build / train": 61,
+          "Enter build submenu": 32,
+          "Enter hero's abilities submenu": 9,
+          "Select subgroup": 16,
+          "Give item / drop item": 1,
+          "Remove unit from queue": 0,
+          "ESC pressed": 0
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 23,
+            "last_totalitems": 2,
+            "used": 286
+          },
+          "1": {
+            "assigned": 5,
+            "last_totalitems": 2,
+            "used": 129
+          },
+          "2": {
+            "assigned": 1,
+            "last_totalitems": 1,
+            "used": 1
+          }
+        },
+        "units": {
+          "order": {
+            "2319": "1 Peon",
+            "12319": "1 Peon",
+            "21381": "1 Peon",
+            "60944": "1 Peon",
+            "83131": "1 Peon",
+            "103397": "1 Peon",
+            "114006": "1 Peon",
+            "158866": "1 Grunt",
+            "212788": "1 Grunt",
+            "251413": "1 Grunt",
+            "325006": "1 Grunt",
+            "346397": "1 Grunt",
+            "371413": "1 Grunt",
+            "429506": "1 Grunt",
+            "503069": "1 Grunt",
+            "578959": "1 Grunt",
+            "639397": "1 Peon",
+            "752772": "1 Grunt",
+            "894272": "1 Grunt",
+            "950272": "1 Tauren",
+            "999616": "1 Tauren",
+            "1035584": "1 Tauren",
+            "1068913": "1 Tauren",
+            "1118631": "1 Tauren",
+            "1207788": "1 Wind Rider",
+            "1260428": "1 Troll Batrider",
+            "1321959": "1 Wind Rider",
+            "1376991": "1 Wind Rider"
+          },
+          "Peon": 8,
+          "Grunt": 11,
+          "Tauren": 5,
+          "Wind Rider": 3,
+          "Troll Batrider": 1
+        },
+        "heroes": {
+          "order": {
+            "67647": "Blademaster",
+            "620131": "Tauren Chieftain"
+          },
+          "Blademaster": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Wind Walk": 2,
+                "Critical Strike": 3,
+                "Bladestorm": 1
+              },
+              "order": {
+                "124975": "Wind Walk",
+                "441303": "Critical Strike",
+                "807428": "Critical Strike",
+                "987006": "Wind Walk",
+                "1367350": "Critical Strike",
+                "1449194": "Bladestorm"
+              }
+            },
+            "ability_time": 1449194,
+            "level": 6
+          },
+          "Tauren Chieftain": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "War Stomp": 2,
+                "Endurance Aura": 1
+              },
+              "order": {
+                "678147": "War Stomp",
+                "846631": "Endurance Aura",
+                "1008397": "War Stomp"
+              }
+            },
+            "ability_time": 1008397,
+            "level": 3
+          }
+        },
+        "buildings": {
+          "order": {
+            "5256": "Altar of Storms",
+            "9209": "Orc Burrow",
+            "48959": "Barracks",
+            "90288": "War Mill",
+            "106288": "Barracks",
+            "134209": "Voodoo Lounge",
+            "162006": "Orc Burrow",
+            "265991": "Orc Burrow",
+            "450209": "Orc Burrow",
+            "451834": "Stronghold",
+            "551303": "Watch Tower",
+            "606788": "Watch Tower",
+            "633819": "Watch Tower",
+            "646225": "Orc Burrow",
+            "706678": "Fortress",
+            "766163": "Watch Tower",
+            "864538": "Tauren Totem",
+            "897475": "Orc Burrow",
+            "935147": "Orc Burrow",
+            "1121741": "Orc Burrow",
+            "1124975": "Orc Burrow",
+            "1138069": "Beastiary",
+            "1155100": "Orc Burrow",
+            "1176756": "Orc Burrow",
+            "1181991": "Beastiary",
+            "1203538": "Watch Tower"
+          },
+          "Altar of Storms": 1,
+          "Orc Burrow": 11,
+          "Barracks": 2,
+          "War Mill": 1,
+          "Voodoo Lounge": 1,
+          "Stronghold": 1,
+          "Watch Tower": 5,
+          "Fortress": 1,
+          "Tauren Totem": 1,
+          "Beastiary": 2
+        },
+        "items": {
+          "order": {
+            "219959": "Healing Salve",
+            "234053": "Healing Salve",
+            "531131": "Healing Salve",
+            "531522": "Lesser Clarity Potion",
+            "531725": "Scroll of Speed",
+            "546241": "Healing Salve",
+            "943459": "Scroll of Protection",
+            "1293459": "Orb of Lightning"
+          },
+          "Healing Salve": 4,
+          "Lesser Clarity Potion": 1,
+          "Scroll of Speed": 1,
+          "Scroll of Protection": 1,
+          "Orb of Lightning": 1
+        },
+        "upgrades": {
+          "order": {
+            "183616": "Armor",
+            "329928": "Melee Weapons",
+            "622850": "Armor",
+            "623163": "Melee Weapons",
+            "625069": "Berserker Strength",
+            "867678": "Armor",
+            "868178": "Melee Weapons"
+          },
+          "Armor": 3,
+          "Melee Weapons": 3,
+          "Berserker Strength": 1
+        },
+        "actions": 2016,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 0,
+        "color": "yellow",
+        "race": "Random",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 2,
+        "race_detected": "Orc",
+        "units_time": 1376991,
+        "upgrades_time": 868178,
+        "time": 1480819,
+        "leave_reason": 12,
+        "leave_result": 7,
+        "apm": 81.68452727848576
+      },
+      "2": {
+        "player_id": 2,
+        "initiator": false,
+        "name": "jians",
+        "actions_details": {
+          "Right click": 714,
+          "Select / deselect": 475,
+          "Select group hotkey": 924,
+          "Assign group hotkey": 26,
+          "Use ability": 44,
+          "Basic commands": 139,
+          "Build / train": 60,
+          "Enter build submenu": 27,
+          "Enter hero's abilities submenu": 4,
+          "Select subgroup": 25,
+          "Give item / drop item": 0,
+          "Remove unit from queue": 3,
+          "ESC pressed": 0
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 8,
+            "last_totalitems": 1,
+            "used": 578
+          },
+          "1": {
+            "assigned": 11,
+            "last_totalitems": 6,
+            "used": 271
+          },
+          "3": {
+            "assigned": 3,
+            "last_totalitems": 1,
+            "used": 66
+          },
+          "4": {
+            "assigned": 2,
+            "last_totalitems": 1,
+            "used": 7
+          },
+          "5": {
+            "assigned": 2,
+            "last_totalitems": 1,
+            "used": 2
+          }
+        },
+        "units": {
+          "order": {
+            "2928": "1 Wisp",
+            "3022": "1 Wisp",
+            "12819": "1 Wisp",
+            "37428": "1 Wisp",
+            "37522": "1 Wisp",
+            "51069": "1 Wisp",
+            "62350": "1 Wisp",
+            "63444": "1 Wisp",
+            "97975": "1 Archer",
+            "116913": "1 Archer",
+            "139444": "1 Archer",
+            "160491": "1 Archer",
+            "316131": "1 Huntress",
+            "404678": "1 Huntress",
+            "405272": "1 Archer",
+            "462100": "1 Wisp",
+            "462288": "1 Wisp",
+            "512256": "1 Wisp",
+            "512366": "1 Wisp",
+            "515366": "1 Wisp",
+            "553381": "1 Wisp",
+            "636944": "1 Wisp",
+            "637038": "1 Wisp",
+            "661506": "1 Wisp",
+            "661616": "1 Wisp",
+            "699319": "1 Huntress",
+            "700319": "1 Wisp",
+            "721553": "1 Wisp",
+            "721647": "1 Wisp",
+            "721866": "1 Wisp",
+            "721975": "1 Wisp",
+            "769163": "1 Wisp",
+            "796881": "1 Huntress",
+            "799444": "1 Dryad",
+            "832178": "1 Druid of the Claw",
+            "918444": "1 Druid of the Claw",
+            "995772": "1 Druid of the Claw",
+            "1068803": "1 Wisp",
+            "1072319": "-1 Wisp",
+            "1085022": "1 Druid of the Claw",
+            "1085631": "1 Dryad",
+            "1111428": "-1 Druid of the Claw",
+            "1112131": "1 Dryad"
+          },
+          "Wisp": 24,
+          "Archer": 5,
+          "Huntress": 4,
+          "Dryad": 3,
+          "Druid of the Claw": 3
+        },
+        "heroes": {
+          "order": {
+            "83834": "Demon Hunter",
+            "775725": "Keeper of the Grove"
+          },
+          "Demon Hunter": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Mana Burn": 1,
+                "Evasion": 1
+              },
+              "order": {
+                "157959": "Mana Burn",
+                "654944": "Evasion"
+              }
+            },
+            "ability_time": 654944,
+            "level": 2
+          },
+          "Keeper of the Grove": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Entangling Roots": 1,
+                "Thorns Aura": 1
+              },
+              "order": {
+                "870209": "Entangling Roots",
+                "1045991": "Thorns Aura"
+              }
+            },
+            "ability_time": 1045991,
+            "level": 2
+          }
+        },
+        "buildings": {
+          "order": {
+            "11538": "Ancient of War",
+            "18553": "Altar of Elders",
+            "33069": "Moon Well",
+            "88100": "Moon Well",
+            "147506": "Ancient of Wonders",
+            "206881": "Tree of Ages",
+            "232553": "Moon Well",
+            "253116": "Hunter's Hall",
+            "338944": "Ancient of Wonders",
+            "502163": "Ancient of War",
+            "507897": "Ancient Protector",
+            "521006": "Ancient Protector",
+            "574444": "Moon Well",
+            "614069": "Moon Well",
+            "635428": "Ancient of War",
+            "669397": "Ancient Protector",
+            "718116": "Ancient of Lore",
+            "766163": "Ancient of Lore",
+            "801147": "Moon Well",
+            "840491": "Moon Well",
+            "871725": "Tree of Eternity"
+          },
+          "Ancient of War": 3,
+          "Altar of Elders": 1,
+          "Moon Well": 7,
+          "Ancient of Wonders": 2,
+          "Tree of Ages": 1,
+          "Hunter's Hall": 1,
+          "Ancient Protector": 3,
+          "Ancient of Lore": 2,
+          "Tree of Eternity": 1
+        },
+        "items": {
+          "order": {
+            "930725": "Scroll of Healing",
+            "930819": "Scroll of Healing",
+            "931522": "Scroll of Town Portal",
+            "931819": "Potion of Lesser Invulnerability",
+            "946069": "Scroll of Protection"
+          },
+          "Scroll of Healing": 2,
+          "Scroll of Town Portal": 1,
+          "Potion of Lesser Invulnerability": 1,
+          "Scroll of Protection": 1
+        },
+        "upgrades": {
+          "order": {
+            "918725": "Druid of the Claw Training",
+            "1013600": "Druid of the Claw Training"
+          },
+          "Druid of the Claw Training": 2
+        },
+        "actions": 2441,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 0,
+        "color": "green",
+        "race": "Random",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 1,
+        "race_detected": "NightElf",
+        "units_time": 1112131,
+        "upgrades_time": 1013600,
+        "runits_time": 1111428,
+        "runits_value": "u_Druid of the Claw",
+        "time": 1480819,
+        "leave_reason": 12,
+        "leave_result": 7,
+        "apm": 98.90472772161891
+      }
+    },
+    null,
+    null,
+    {
+      "3": {
+        "player_id": 3,
+        "initiator": false,
+        "name": "Neko",
+        "actions_details": {
+          "Right click": 907,
+          "Select / deselect": 247,
+          "Select group hotkey": 190,
+          "Assign group hotkey": 13,
+          "Use ability": 61,
+          "Basic commands": 49,
+          "Build / train": 26,
+          "Enter build submenu": 16,
+          "Enter hero's abilities submenu": 2,
+          "Select subgroup": 16,
+          "Give item / drop item": 0,
+          "Remove unit from queue": 0,
+          "ESC pressed": 2
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 2,
+            "last_totalitems": 1,
+            "used": 24
+          },
+          "2": {
+            "assigned": 11,
+            "last_totalitems": 4,
+            "used": 166
+          }
+        },
+        "units": {
+          "order": {
+            "14631": "1 Wisp",
+            "14834": "1 Wisp",
+            "14944": "1 Wisp",
+            "43444": "1 Wisp",
+            "58194": "1 Wisp",
+            "87381": "1 Wisp",
+            "100272": "1 Archer",
+            "112163": "1 Archer",
+            "116397": "1 Wisp",
+            "116506": "1 Wisp",
+            "129631": "1 Archer",
+            "177709": "1 Archer",
+            "190600": "1 Wisp",
+            "191819": "1 Wisp",
+            "221256": "1 Wisp",
+            "224116": "1 Archer",
+            "319178": "1 Huntress",
+            "347694": "1 Huntress",
+            "405272": "1 Huntress"
+          },
+          "Wisp": 11,
+          "Archer": 5,
+          "Huntress": 3
+        },
+        "heroes": {
+          "order": {
+            "77959": "Keeper of the Grove"
+          },
+          "Keeper of the Grove": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Entangling Roots": 1,
+                "Force of Nature": 1
+              },
+              "order": {
+                "143881": "Entangling Roots",
+                "790538": "Force of Nature"
+              }
+            },
+            "ability_time": 790538,
+            "level": 2
+          }
+        },
+        "buildings": {
+          "order": {
+            "4444": "Altar of Elders",
+            "11631": "Moon Well",
+            "38022": "Ancient of War",
+            "107616": "Moon Well",
+            "186334": "Hunter's Hall",
+            "195194": "Hunter's Hall",
+            "230850": "Moon Well",
+            "320788": "Tree of Ages",
+            "498756": "Moon Well",
+            "500381": "Moon Well",
+            "501678": "Moon Well",
+            "526006": "Moon Well",
+            "555022": "Tree of Life",
+            "728819": "Tree of Life",
+            "1056038": "Moon Well"
+          },
+          "Altar of Elders": 1,
+          "Moon Well": 8,
+          "Ancient of War": 1,
+          "Hunter's Hall": 2,
+          "Tree of Ages": 1,
+          "Tree of Life": 2
+        },
+        "items": {
+          "order": {}
+        },
+        "upgrades": {
+          "order": {
+            "338038": "Strength of the Moon",
+            "339053": "Moon Armor"
+          },
+          "Strength of the Moon": 1,
+          "Moon Armor": 1
+        },
+        "actions": 1529,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 3,
+        "color": "blue",
+        "race": "Random",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 1,
+        "race_detected": "NightElf",
+        "units_time": 405272,
+        "upgrades_time": 339053,
+        "time": 1480819,
+        "leave_reason": 12,
+        "leave_result": 7,
+        "apm": 61.95220347658964
+      },
+      "4": {
+        "player_id": 4,
+        "initiator": false,
+        "name": "FrostTear",
+        "actions_details": {
+          "Right click": 574,
+          "Select / deselect": 501,
+          "Select group hotkey": 472,
+          "Assign group hotkey": 41,
+          "Use ability": 32,
+          "Basic commands": 306,
+          "Build / train": 60,
+          "Enter build submenu": 20,
+          "Enter hero's abilities submenu": 11,
+          "Select subgroup": 15,
+          "Give item / drop item": 0,
+          "Remove unit from queue": 1,
+          "ESC pressed": 1
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 26,
+            "last_totalitems": 7,
+            "used": 286
+          },
+          "1": {
+            "assigned": 2,
+            "last_totalitems": 4,
+            "used": 38
+          },
+          "2": {
+            "assigned": 7,
+            "last_totalitems": 3,
+            "used": 54
+          },
+          "3": {
+            "assigned": 3,
+            "last_totalitems": 2,
+            "used": 67
+          },
+          "4": {
+            "assigned": 2,
+            "last_totalitems": 1,
+            "used": 27
+          },
+          "5": {
+            "assigned": 1,
+            "last_totalitems": 2
+          }
+        },
+        "units": {
+          "order": {
+            "2006": "1 Wisp",
+            "12725": "1 Wisp",
+            "21491": "1 Wisp",
+            "32053": "1 Wisp",
+            "50553": "1 Wisp",
+            "72022": "1 Wisp",
+            "87491": "1 Wisp",
+            "101303": "1 Wisp",
+            "112163": "1 Archer",
+            "122350": "1 Wisp",
+            "151053": "1 Archer",
+            "193194": "1 Huntress",
+            "199834": "1 Wisp",
+            "226538": "1 Huntress",
+            "243256": "1 Huntress",
+            "271913": "2 Huntress",
+            "317647": "2 Huntress",
+            "385319": "2 Huntress",
+            "427225": "2 Huntress",
+            "568256": "1 Dryad",
+            "621163": "1 Dryad",
+            "671194": "2 Dryad",
+            "698397": "1 Dryad",
+            "765256": "1 Wisp",
+            "845022": "1 Wisp",
+            "924538": "1 Chimaera",
+            "934444": "1 Chimaera",
+            "954491": "1 Dryad",
+            "994850": "1 Chimaera",
+            "1067319": "1 Chimaera",
+            "1124053": "1 Chimaera",
+            "1156991": "1 Chimaera",
+            "1185819": "1 Dryad",
+            "1204663": "1 Chimaera",
+            "1206881": "1 Dryad",
+            "1285272": "1 Chimaera"
+          },
+          "Wisp": 12,
+          "Archer": 2,
+          "Huntress": 11,
+          "Dryad": 8,
+          "Chimaera": 8
+        },
+        "heroes": {
+          "order": {
+            "69475": "Priestess of the Moon",
+            "629944": "Naga Sea Witch"
+          },
+          "Priestess of the Moon": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Trueshot Aura": 3,
+                "Searing Arrows": 3,
+                "Starfall": 1
+              },
+              "order": {
+                "129913": "Trueshot Aura",
+                "446272": "Searing Arrows",
+                "758069": "Trueshot Aura",
+                "1113538": "Searing Arrows",
+                "1193631": "Trueshot Aura",
+                "1274319": "Starfall",
+                "1344350": "Searing Arrows"
+              }
+            },
+            "ability_time": 1344350,
+            "level": 7
+          },
+          "Naga Sea Witch": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Frost Arrows": 2,
+                "Forked Lightning": 2
+              },
+              "order": {
+                "632616": "Frost Arrows",
+                "861100": "Forked Lightning",
+                "1121631": "Frost Arrows",
+                "1259116": "Forked Lightning"
+              }
+            },
+            "ability_time": 1259116,
+            "level": 4
+          }
+        },
+        "buildings": {
+          "order": {
+            "5256": "Altar of Elders",
+            "17256": "Moon Well",
+            "48663": "Ancient of War",
+            "94256": "Moon Well",
+            "128100": "Hunter's Hall",
+            "203975": "Ancient of War",
+            "252803": "Moon Well",
+            "278678": "Moon Well",
+            "333069": "Tree of Ages",
+            "473569": "Moon Well",
+            "476631": "Ancient of Lore",
+            "515053": "Tree of Eternity",
+            "533834": "Ancient of Wonders",
+            "572834": "Ancient of Lore",
+            "651569": "Ancient of Wonders",
+            "701022": "Ancient of Wind",
+            "767553": "Chimaera Roost",
+            "836694": "Chimaera Roost",
+            "849163": "Moon Well",
+            "869616": "Moon Well"
+          },
+          "Altar of Elders": 1,
+          "Moon Well": 7,
+          "Ancient of War": 2,
+          "Hunter's Hall": 1,
+          "Tree of Ages": 1,
+          "Ancient of Lore": 2,
+          "Tree of Eternity": 1,
+          "Ancient of Wonders": 2,
+          "Ancient of Wind": 1,
+          "Chimaera Roost": 2
+        },
+        "items": {
+          "order": {
+            "352413": "Circlet of Nobility",
+            "354131": "Dust of Appearance",
+            "1040506": "Staff of Preservation"
+          },
+          "Circlet of Nobility": 1,
+          "Dust of Appearance": 1,
+          "Staff of Preservation": 1
+        },
+        "upgrades": {
+          "order": {
+            "227834": "Strength of the Moon",
+            "470350": "Moon Armor",
+            "568975": "Abolish Magic",
+            "865756": "Corrosive Breath",
+            "872725": "Strength of the Wild",
+            "920616": "Abolish Magic"
+          },
+          "Strength of the Moon": 1,
+          "Moon Armor": 1,
+          "Abolish Magic": 1,
+          "Corrosive Breath": 1,
+          "Strength of the Wild": 1
+        },
+        "actions": 2034,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 3,
+        "color": "red",
+        "race": "Random",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 3,
+        "race_detected": "NightElf",
+        "units_time": 1285272,
+        "upgrades_time": 920616,
+        "rupgrades_time": 570803,
+        "rupgrades_value": "p_Abolish Magic",
+        "time": 1467397,
+        "leave_reason": 1,
+        "leave_result": 7,
+        "apm": 83.16767718620115
+      }
+    }
+  ],
+  "chat": [],
+  "header": {
+    "intro": "Warcraft III recorded game\u001a",
+    "c_size": 189968,
+    "ident": "W3XP",
+    "major_v": 27,
+    "build_v": 6059,
+    "length": 1480800,
+    "checksum": -857629369,
+    "minor_v": 0
+  }
+}

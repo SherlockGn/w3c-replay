@@ -1,0 +1,809 @@
+{
+  "filename": "C:\\Users\\tianheg\\Documents\\coding\\w3c-replay\\replay\\Replay_2025_05_29_1308\\Replay_2025_05_29_1308.w3g",
+  "game": {
+    "player_count": 4,
+    "name": "å½å°å±åç½åçæ¸¸æ (Fr",
+    "speed": "Fast",
+    "visibility": "Default",
+    "observers": "No Observers",
+    "teams_together": true,
+    "lock_teams": true,
+    "full_shared_unit_control": false,
+    "random_hero": false,
+    "random_races": false,
+    "creator": "FrostTear",
+    "map": "Maps\\FrozenThrone\\(4)TwistedMeadows.w3x",
+    "slots": 4,
+    "type": "Custom game",
+    "private": false,
+    "record_id": 25,
+    "record_length": 43,
+    "slot_records": 4,
+    "random_seed": 2542296,
+    "select_mode": "Team & race selectable",
+    "start_spots": 4,
+    "loser_team": 0,
+    "saver_id": 2,
+    "saver_name": "Neko",
+    "winner_team": 3
+  },
+  "teams": [
+    {
+      "1": {
+        "player_id": 1,
+        "initiator": true,
+        "name": "FrostTear",
+        "actions_details": {
+          "Right click": 540,
+          "Select / deselect": 488,
+          "Select group hotkey": 300,
+          "Assign group hotkey": 27,
+          "Use ability": 102,
+          "Basic commands": 137,
+          "Build / train": 63,
+          "Enter build submenu": 14,
+          "Enter hero's abilities submenu": 8,
+          "Select subgroup": 54,
+          "Give item / drop item": 1,
+          "Remove unit from queue": 0,
+          "ESC pressed": 1
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 20,
+            "last_totalitems": 3,
+            "used": 220
+          },
+          "1": {
+            "assigned": 2,
+            "last_totalitems": 9,
+            "used": 6
+          },
+          "2": {
+            "assigned": 1,
+            "last_totalitems": 1,
+            "used": 6
+          },
+          "3": {
+            "assigned": 1,
+            "last_totalitems": 1,
+            "used": 60
+          },
+          "4": {
+            "assigned": 3,
+            "last_totalitems": 1,
+            "used": 8
+          }
+        },
+        "units": {
+          "order": {
+            "5210": "1 Peasant",
+            "15663": "1 Peasant",
+            "35319": "1 Peasant",
+            "41288": "1 Peasant",
+            "60085": "1 Peasant",
+            "78553": "1 Peasant",
+            "110897": "1 Peasant",
+            "124897": "1 Rifleman",
+            "139928": "1 Peasant",
+            "148897": "1 Rifleman",
+            "178491": "1 Rifleman",
+            "188022": "1 Peasant",
+            "205585": "1 Peasant",
+            "225522": "1 Rifleman",
+            "249022": "1 Rifleman",
+            "307960": "1 Rifleman",
+            "355569": "1 Rifleman",
+            "460241": "1 Rifleman",
+            "463553": "1 Rifleman",
+            "489835": "1 Forest Troll Shadow Priest",
+            "504960": "1 Peasant",
+            "514413": "1 Rifleman",
+            "565397": "1 Rifleman",
+            "592710": "1 Rifleman",
+            "612444": "1 Rifleman",
+            "631897": "1 Rifleman",
+            "795585": "1 Rifleman",
+            "820944": "1 Rifleman",
+            "876225": "1 Rifleman",
+            "914163": "1 Rifleman",
+            "1007694": "1 Rifleman",
+            "1035585": "1 Rifleman",
+            "1078069": "1 Rifleman",
+            "1091319": "1 Rifleman"
+          },
+          "Peasant": 11,
+          "Rifleman": 22,
+          "Forest Troll Shadow Priest": 1
+        },
+        "heroes": {
+          "order": {
+            "102006": "Paladin",
+            "462944": "Blood Mage"
+          },
+          "Paladin": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Holy Light": 3,
+                "Devotion Aura": 2
+              },
+              "order": {
+                "164553": "Holy Light",
+                "208303": "Devotion Aura",
+                "420256": "Holy Light",
+                "606444": "Devotion Aura",
+                "1027038": "Holy Light"
+              }
+            },
+            "ability_time": 1027038,
+            "level": 5
+          },
+          "Blood Mage": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Siphon Mana": 2,
+                "Banish": 1
+              },
+              "order": {
+                "537038": "Siphon Mana",
+                "625710": "Banish",
+                "828022": "Siphon Mana"
+              }
+            },
+            "ability_time": 828022,
+            "level": 3
+          }
+        },
+        "buildings": {
+          "order": {
+            "33381": "Altar of Kings",
+            "36741": "Blacksmith",
+            "45506": "Farm",
+            "52975": "Barracks",
+            "82725": "Farm",
+            "119069": "Farm",
+            "261397": "Keep",
+            "261506": "Keep",
+            "286522": "Farm",
+            "289006": "Lumber Mill",
+            "430475": "Farm",
+            "465272": "Farm",
+            "503163": "Arcane Vault",
+            "798397": "Farm",
+            "878256": "Workshop"
+          },
+          "Altar of Kings": 1,
+          "Blacksmith": 1,
+          "Farm": 7,
+          "Barracks": 1,
+          "Keep": 2,
+          "Lumber Mill": 1,
+          "Arcane Vault": 1,
+          "Workshop": 1
+        },
+        "items": {
+          "order": {
+            "439288": "Circlet of Nobility",
+            "444647": "Scroll of Healing",
+            "647303": "Scroll of Healing",
+            "649944": "Potion of Lesser Invulnerability",
+            "650350": "Scroll of Healing",
+            "785272": "Scroll of Regeneration",
+            "787319": "Lesser Clarity Potion",
+            "790319": "Potion of Mana",
+            "793741": "Scroll of Regeneration",
+            "856475": "Potion of Lesser Invulnerability",
+            "860194": "Scroll of Healing",
+            "860397": "Scroll of Protection",
+            "864256": "Scroll of Healing",
+            "900397": "Scroll of Healing"
+          },
+          "Circlet of Nobility": 1,
+          "Scroll of Healing": 6,
+          "Potion of Lesser Invulnerability": 2,
+          "Scroll of Regeneration": 2,
+          "Lesser Clarity Potion": 1,
+          "Potion of Mana": 1,
+          "Scroll of Protection": 1
+        },
+        "upgrades": {
+          "order": {
+            "427428": "Long Rifles",
+            "480991": "Gunpowder",
+            "800538": "Armor"
+          },
+          "Long Rifles": 1,
+          "Gunpowder": 1,
+          "Armor": 1
+        },
+        "actions": 1735,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 0,
+        "color": "red",
+        "race": "Human",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 1,
+        "race_detected": "Human",
+        "units_time": 1091319,
+        "upgrades_time": 800538,
+        "time": 1108600,
+        "leave_reason": 1,
+        "leave_result": 7,
+        "apm": 93.90221901497384
+      },
+      "2": {
+        "player_id": 2,
+        "initiator": false,
+        "name": "Neko",
+        "actions_details": {
+          "Right click": 801,
+          "Select / deselect": 216,
+          "Select group hotkey": 252,
+          "Assign group hotkey": 25,
+          "Use ability": 68,
+          "Basic commands": 142,
+          "Build / train": 59,
+          "Enter build submenu": 13,
+          "Enter hero's abilities submenu": 6,
+          "Select subgroup": 83,
+          "Give item / drop item": 0,
+          "Remove unit from queue": 0,
+          "ESC pressed": 0
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 1,
+            "last_totalitems": 1,
+            "used": 74
+          },
+          "2": {
+            "assigned": 21,
+            "last_totalitems": 11,
+            "used": 174
+          },
+          "3": {
+            "assigned": 3,
+            "last_totalitems": 3,
+            "used": 4
+          }
+        },
+        "units": {
+          "order": {
+            "1710": "1 Peasant",
+            "1803": "1 Peasant",
+            "1897": "1 Peasant",
+            "39178": "1 Peasant",
+            "59788": "1 Peasant",
+            "70678": "1 Peasant",
+            "92866": "1 Peasant",
+            "100303": "1 Peasant",
+            "126006": "1 Rifleman",
+            "141413": "1 Peasant",
+            "166163": "1 Rifleman",
+            "209897": "1 Peasant",
+            "210991": "1 Rifleman",
+            "243069": "1 Rifleman",
+            "263647": "1 Rifleman",
+            "285741": "1 Rifleman",
+            "389569": "1 Rifleman",
+            "476850": "1 Rifleman",
+            "500491": "1 Rifleman",
+            "582288": "1 Rifleman",
+            "629460": "1 Rifleman",
+            "662194": "1 Rifleman",
+            "698725": "1 Rifleman",
+            "723522": "1 Rifleman",
+            "769585": "1 Rifleman",
+            "789725": "1 Rifleman",
+            "797194": "1 Mortar Team",
+            "811788": "1 Rifleman",
+            "825413": "1 Mortar Team",
+            "845881": "1 Mortar Team",
+            "847319": "1 Rifleman",
+            "880350": "1 Rifleman",
+            "928569": "1 Rifleman",
+            "1072928": "1 Rifleman",
+            "1074960": "1 Mortar Team"
+          },
+          "Peasant": 10,
+          "Rifleman": 21,
+          "Mortar Team": 4
+        },
+        "heroes": {
+          "order": {
+            "94460": "Paladin",
+            "429272": "Blood Mage",
+            "429366": "Blood Mage"
+          },
+          "Paladin": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Holy Light": 2,
+                "Divine Shield": 1,
+                "Devotion Aura": 1
+              },
+              "order": {
+                "164772": "Holy Light",
+                "365350": "Divine Shield",
+                "556694": "Holy Light",
+                "1007694": "Devotion Aura"
+              }
+            },
+            "ability_time": 1007694,
+            "level": 4
+          },
+          "Blood Mage": {
+            "revivals": 2,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Siphon Mana": 1,
+                "Flame Strike": 1
+              },
+              "order": {
+                "495210": "Siphon Mana",
+                "1017381": "Flame Strike"
+              }
+            },
+            "ability_time": 1017381,
+            "level": 2
+          }
+        },
+        "buildings": {
+          "order": {
+            "31678": "Altar of Kings",
+            "35819": "Farm",
+            "49631": "Blacksmith",
+            "55506": "Barracks",
+            "84428": "Farm",
+            "112319": "Farm",
+            "134256": "Farm",
+            "233444": "Keep",
+            "395694": "Farm",
+            "400553": "Farm",
+            "454350": "Farm",
+            "503647": "Farm",
+            "647506": "Workshop",
+            "891756": "Farm"
+          },
+          "Altar of Kings": 1,
+          "Farm": 9,
+          "Blacksmith": 1,
+          "Barracks": 1,
+          "Keep": 1,
+          "Workshop": 1
+        },
+        "items": {
+          "order": {
+            "441725": "Scroll of Protection",
+            "858100": "Scroll of Protection"
+          },
+          "Scroll of Protection": 2
+        },
+        "upgrades": {
+          "order": {
+            "426131": "Gunpowder",
+            "431194": "Long Rifles",
+            "790710": "Gunpowder",
+            "809381": "Armor"
+          },
+          "Gunpowder": 2,
+          "Long Rifles": 1,
+          "Armor": 1
+        },
+        "actions": 1665,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 0,
+        "color": "blue",
+        "race": "Human",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 1,
+        "race_detected": "Human",
+        "units_time": 1074960,
+        "upgrades_time": 809381,
+        "time": 1114856,
+        "leave_reason": 12,
+        "leave_result": 7,
+        "apm": 89.60798524652512
+      }
+    },
+    null,
+    null,
+    {
+      "3": {
+        "player_id": 3,
+        "initiator": false,
+        "name": "txd",
+        "actions_details": {
+          "Right click": 842,
+          "Select / deselect": 390,
+          "Select group hotkey": 130,
+          "Assign group hotkey": 22,
+          "Use ability": 58,
+          "Basic commands": 62,
+          "Build / train": 55,
+          "Enter build submenu": 13,
+          "Enter hero's abilities submenu": 6,
+          "Select subgroup": 47,
+          "Give item / drop item": 2,
+          "Remove unit from queue": 0,
+          "ESC pressed": 0
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 22,
+            "last_totalitems": 6,
+            "used": 130
+          }
+        },
+        "units": {
+          "order": {
+            "4710": "1 Acolyte",
+            "19116": "1 Acolyte",
+            "91663": "1 Ghoul",
+            "112850": "1 Ghoul",
+            "140710": "1 Crypt Fiend",
+            "172741": "1 Crypt Fiend",
+            "233835": "1 Crypt Fiend",
+            "276210": "1 Crypt Fiend",
+            "390491": "1 Crypt Fiend",
+            "405881": "1 Crypt Fiend",
+            "419538": "1 Acolyte",
+            "486913": "1 Crypt Fiend",
+            "608944": "1 Crypt Fiend",
+            "626819": "1 Crypt Fiend",
+            "640522": "1 Obsidian Statue",
+            "831210": "1 Crypt Fiend",
+            "864460": "1 Crypt Fiend",
+            "940522": "1 Abomination",
+            "1052303": "1 Abomination",
+            "1053506": "1 Crypt Fiend"
+          },
+          "Acolyte": 3,
+          "Ghoul": 2,
+          "Crypt Fiend": 12,
+          "Obsidian Statue": 1,
+          "Abomination": 2
+        },
+        "heroes": {
+          "order": {
+            "121678": "Death Knight",
+            "392116": "Crypt Lord"
+          },
+          "Death Knight": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Death Coil": 2,
+                "Unholy Aura": 2
+              },
+              "order": {
+                "178381": "Death Coil",
+                "265053": "Unholy Aura",
+                "516428": "Unholy Aura",
+                "1079663": "Death Coil"
+              }
+            },
+            "ability_time": 1079663,
+            "level": 4
+          },
+          "Crypt Lord": {
+            "revivals": 1
+          },
+          "Crypt lord": {
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Impale": 1,
+                "Spiked Carapace": 1
+              },
+              "order": {
+                "456741": "Impale",
+                "590788": "Spiked Carapace"
+              }
+            },
+            "ability_time": 590788,
+            "level": 2
+          }
+        },
+        "buildings": {
+          "order": {
+            "7741": "Crypt",
+            "13866": "Graveyard",
+            "39272": "Ziggurat",
+            "57303": "Altar of Darkness",
+            "76819": "Tomb of Relics",
+            "105444": "Ziggurat",
+            "155022": "Ziggurat",
+            "213397": "Halls of the Dead",
+            "394585": "Sacrificial Pit",
+            "399741": "Slaughterhouse",
+            "651991": "Spirit Tower",
+            "653460": "Nerubian Tower",
+            "682022": "Spirit Tower",
+            "710725": "Ziggurat",
+            "712350": "Ziggurat",
+            "793038": "Black Citadel",
+            "909928": "Spirit Tower",
+            "938913": "Spirit Tower"
+          },
+          "Crypt": 1,
+          "Graveyard": 1,
+          "Ziggurat": 5,
+          "Altar of Darkness": 1,
+          "Tomb of Relics": 1,
+          "Halls of the Dead": 1,
+          "Sacrificial Pit": 1,
+          "Slaughterhouse": 1,
+          "Spirit Tower": 4,
+          "Nerubian Tower": 1,
+          "Black Citadel": 1
+        },
+        "items": {
+          "order": {
+            "460147": "Potion of Healing",
+            "460741": "Potion of Healing",
+            "461053": "Rod of Necromancy",
+            "614944": "Potion of Healing",
+            "743303": "Potion of Healing",
+            "822569": "Potion of Lesser Invulnerability",
+            "823788": "Scroll of Protection",
+            "824913": "Scroll of Healing",
+            "989147": "Potion of Healing",
+            "989366": "Potion of Healing",
+            "989866": "Potion of Healing",
+            "1070006": "Scroll of Healing"
+          },
+          "Potion of Healing": 7,
+          "Rod of Necromancy": 1,
+          "Potion of Lesser Invulnerability": 1,
+          "Scroll of Protection": 1,
+          "Scroll of Healing": 2
+        },
+        "upgrades": {
+          "order": {
+            "424928": "Creature Carapace",
+            "425210": "Creature Attack",
+            "865069": "Burrow"
+          },
+          "Creature Carapace": 1,
+          "Creature Attack": 1,
+          "Burrow": 1
+        },
+        "actions": 1627,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 3,
+        "color": "yellow",
+        "race": "Undead",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 2,
+        "race_detected": "Undead",
+        "units_time": 1053506,
+        "upgrades_time": 865069,
+        "time": 1114856,
+        "leave_reason": 12,
+        "leave_result": 7,
+        "apm": 87.56287807573354
+      },
+      "4": {
+        "player_id": 4,
+        "initiator": false,
+        "name": "jians",
+        "actions_details": {
+          "Right click": 663,
+          "Select / deselect": 470,
+          "Select group hotkey": 725,
+          "Assign group hotkey": 39,
+          "Use ability": 69,
+          "Basic commands": 104,
+          "Build / train": 66,
+          "Enter build submenu": 18,
+          "Enter hero's abilities submenu": 9,
+          "Select subgroup": 46,
+          "Give item / drop item": 0,
+          "Remove unit from queue": 2,
+          "ESC pressed": 0
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 22,
+            "last_totalitems": 10,
+            "used": 384
+          },
+          "1": {
+            "assigned": 15,
+            "last_totalitems": 4,
+            "used": 321
+          },
+          "2": {
+            "assigned": 2,
+            "last_totalitems": 2,
+            "used": 20
+          }
+        },
+        "units": {
+          "order": {
+            "2928": "1 Acolyte",
+            "3116": "1 Acolyte",
+            "84835": "1 Ghoul",
+            "100913": "1 Ghoul",
+            "126006": "1 Ghoul",
+            "165256": "1 Crypt Fiend",
+            "222288": "2 Crypt Fiend",
+            "265756": "2 Crypt Fiend",
+            "282600": "1 Crypt Fiend",
+            "392116": "1 Crypt Fiend",
+            "473600": "2 Crypt Fiend",
+            "488913": "1 Obsidian Statue",
+            "620381": "2 Crypt Fiend",
+            "623881": "1 Abomination",
+            "683116": "1 Ghoul",
+            "686053": "1 Abomination",
+            "739319": "2 Crypt Fiend",
+            "739647": "2 Ghoul",
+            "781881": "2 Ghoul",
+            "879741": "1 Ghoul",
+            "1033163": "2 Ghoul",
+            "1090210": "2 Ghoul",
+            "1109825": "2 Ghoul"
+          },
+          "Acolyte": 2,
+          "Ghoul": 15,
+          "Crypt Fiend": 13,
+          "Obsidian Statue": 1,
+          "Abomination": 2
+        },
+        "heroes": {
+          "order": {
+            "95491": "Death Knight",
+            "391194": "Lich"
+          },
+          "Death Knight": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Death Coil": 2,
+                "Unholy Aura": 2
+              },
+              "order": {
+                "168585": "Death Coil",
+                "259163": "Unholy Aura",
+                "467881": "Death Coil",
+                "645397": "Unholy Aura"
+              }
+            },
+            "ability_time": 645397,
+            "level": 4
+          },
+          "Lich": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Frost Nova": 2,
+                "Frost Armor": 1
+              },
+              "order": {
+                "472069": "Frost Nova",
+                "593819": "Frost Armor",
+                "1025928": "Frost Nova"
+              }
+            },
+            "ability_time": 1025928,
+            "level": 3
+          }
+        },
+        "buildings": {
+          "order": {
+            "9819": "Crypt",
+            "11663": "Crypt",
+            "14569": "Ziggurat",
+            "34710": "Altar of Darkness",
+            "58772": "Graveyard",
+            "77335": "Tomb of Relics",
+            "112647": "Ziggurat",
+            "192381": "Halls of the Dead",
+            "192475": "Halls of the Dead",
+            "234975": "Ziggurat",
+            "401163": "Slaughterhouse",
+            "404178": "Ziggurat",
+            "434678": "Black Citadel",
+            "493803": "Ziggurat",
+            "814506": "Nerubian Tower",
+            "823897": "Ziggurat"
+          },
+          "Crypt": 2,
+          "Ziggurat": 6,
+          "Altar of Darkness": 1,
+          "Graveyard": 1,
+          "Tomb of Relics": 1,
+          "Halls of the Dead": 2,
+          "Slaughterhouse": 1,
+          "Black Citadel": 1,
+          "Nerubian Tower": 0
+        },
+        "items": {
+          "order": {
+            "154913": "Rod of Necromancy",
+            "417928": "Rod of Necromancy",
+            "505772": "Potion of Lesser Invulnerability",
+            "838069": "Potion of Healing",
+            "911116": "Scroll of Healing",
+            "919428": "Potion of Mana",
+            "931725": "Potion of Healing",
+            "931835": "Potion of Healing",
+            "1042960": "Potion of Mana",
+            "1043350": "Potion of Mana"
+          },
+          "Rod of Necromancy": 2,
+          "Potion of Lesser Invulnerability": 1,
+          "Potion of Healing": 3,
+          "Scroll of Healing": 1,
+          "Potion of Mana": 3
+        },
+        "upgrades": {
+          "order": {
+            "240053": "Creature Attack",
+            "492585": "Unholy Armor",
+            "651366": "Ghoul Frenzy",
+            "654772": "Disease Cloud",
+            "704288": "Creature Attack",
+            "706178": "Unholy Strength"
+          },
+          "Creature Attack": 1,
+          "Unholy Armor": 1,
+          "Ghoul Frenzy": 1,
+          "Disease Cloud": 1,
+          "Unholy Strength": 1
+        },
+        "actions": 2211,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 3,
+        "color": "green",
+        "race": "Undead",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 4,
+        "race_detected": "Undead",
+        "units_time": 1109825,
+        "upgrades_time": 706178,
+        "rupgrades_time": 705585,
+        "rupgrades_value": "p_Creature Attack",
+        "time": 1114856,
+        "leave_reason": 12,
+        "leave_result": 7,
+        "apm": 118.99294617421442
+      }
+    }
+  ],
+  "chat": [],
+  "header": {
+    "intro": "Warcraft III recorded game\u001a",
+    "c_size": 158373,
+    "ident": "W3XP",
+    "major_v": 27,
+    "build_v": 6059,
+    "length": 1114850,
+    "checksum": 1163114150,
+    "minor_v": 0
+  }
+}

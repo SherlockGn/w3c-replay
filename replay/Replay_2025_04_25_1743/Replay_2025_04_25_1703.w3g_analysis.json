@@ -1,0 +1,461 @@
+{
+  "filename": "C:\\Users\\tianheg\\Documents\\coding\\w3c-replay\\replay\\Replay_2025_04_25_1743\\Replay_2025_04_25_1703.w3g",
+  "game": {
+    "player_count": 2,
+    "name": "å½å°å±åç½åçæ¸¸æ (Ne",
+    "speed": "Fast",
+    "visibility": "Default",
+    "observers": "No Observers",
+    "teams_together": true,
+    "lock_teams": true,
+    "full_shared_unit_control": false,
+    "random_hero": false,
+    "random_races": false,
+    "creator": "Neko",
+    "map": "Maps\\(4)TurtleRock.w3x",
+    "slots": 4,
+    "type": "Custom game",
+    "private": false,
+    "record_id": 25,
+    "record_length": 43,
+    "slot_records": 4,
+    "random_seed": 982828,
+    "select_mode": "Team & race selectable",
+    "start_spots": 4,
+    "winner_team": 0,
+    "saver_id": 1,
+    "saver_name": "Neko",
+    "loser_team": 1
+  },
+  "teams": [
+    {
+      "1": {
+        "player_id": 1,
+        "initiator": true,
+        "name": "Neko",
+        "actions_details": {
+          "Right click": 1019,
+          "Select / deselect": 318,
+          "Select group hotkey": 535,
+          "Assign group hotkey": 19,
+          "Use ability": 102,
+          "Basic commands": 154,
+          "Build / train": 70,
+          "Enter build submenu": 17,
+          "Enter hero's abilities submenu": 9,
+          "Select subgroup": 47,
+          "Give item / drop item": 2,
+          "Remove unit from queue": 0,
+          "ESC pressed": 8
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 1,
+            "last_totalitems": 1,
+            "used": 60
+          },
+          "1": {
+            "assigned": 1,
+            "last_totalitems": 2
+          },
+          "2": {
+            "assigned": 16,
+            "last_totalitems": 12,
+            "used": 474
+          },
+          "3": {
+            "assigned": 1,
+            "last_totalitems": 4,
+            "used": 1
+          }
+        },
+        "units": {
+          "order": {
+            "897": "1 Peasant",
+            "1006": "1 Peasant",
+            "1209": "1 Peasant",
+            "36194": "1 Peasant",
+            "58069": "1 Peasant",
+            "67006": "1 Peasant",
+            "93022": "1 Peasant",
+            "118100": "1 Rifleman",
+            "120506": "1 Peasant",
+            "150475": "1 Rifleman",
+            "172163": "1 Rifleman",
+            "235100": "1 Rifleman",
+            "273584": "1 Rifleman",
+            "307444": "1 Rifleman",
+            "344756": "1 Rifleman",
+            "366038": "1 Rifleman",
+            "402959": "1 Rifleman",
+            "530272": "1 Rifleman",
+            "572569": "1 Rifleman",
+            "680350": "1 Rifleman",
+            "699069": "1 Rifleman",
+            "735881": "1 Rifleman",
+            "788709": "1 Rifleman",
+            "870741": "1 Rifleman",
+            "1010631": "1 Rifleman",
+            "1126006": "1 Peasant",
+            "1126209": "1 Peasant",
+            "1126616": "1 Peasant",
+            "1203163": "1 Peasant",
+            "1203256": "1 Peasant",
+            "1204569": "1 Peasant",
+            "1499241": "1 Peasant",
+            "1499350": "1 Peasant"
+          },
+          "Peasant": 16,
+          "Rifleman": 17
+        },
+        "heroes": {
+          "order": {
+            "89819": "Paladin",
+            "89913": "Paladin",
+            "435928": "Blood Mage"
+          },
+          "Paladin": {
+            "revivals": 2,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Holy Light": 2,
+                "Devotion Aura": 3
+              },
+              "order": {
+                "149381": "Holy Light",
+                "260678": "Devotion Aura",
+                "356413": "Holy Light",
+                "570350": "Devotion Aura",
+                "877459": "Devotion Aura"
+              }
+            },
+            "ability_time": 877459,
+            "level": 5
+          },
+          "Blood Mage": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Siphon Mana": 2,
+                "Banish": 1,
+                "Flame Strike": 1
+              },
+              "order": {
+                "536100": "Siphon Mana",
+                "701272": "Banish",
+                "813631": "Siphon Mana",
+                "1099163": "Flame Strike"
+              }
+            },
+            "ability_time": 1099163,
+            "level": 4
+          }
+        },
+        "buildings": {
+          "order": {
+            "28350": "Altar of Kings",
+            "33069": "Farm",
+            "44272": "Blacksmith",
+            "49319": "Barracks",
+            "77678": "Farm",
+            "100272": "Scout Tower",
+            "131803": "Arcane Tower",
+            "196350": "Farm",
+            "203194": "Farm",
+            "214366": "Arcane Vault",
+            "220225": "Farm",
+            "283053": "Keep",
+            "368725": "Farm",
+            "404975": "Farm",
+            "522991": "Lumber Mill",
+            "740897": "Castle",
+            "849319": "Workshop",
+            "993663": "Town Hall",
+            "1216241": "Arcane Tower",
+            "1218538": "Arcane Tower",
+            "1304663": "Farm",
+            "1305756": "Farm",
+            "1306569": "Farm",
+            "1424600": "Farm",
+            "1425084": "Farm",
+            "1426616": "Farm"
+          },
+          "Altar of Kings": 1,
+          "Farm": 13,
+          "Blacksmith": 1,
+          "Barracks": 1,
+          "Scout Tower": 1,
+          "Arcane Tower": 3,
+          "Arcane Vault": 1,
+          "Keep": 1,
+          "Lumber Mill": 1,
+          "Castle": 1,
+          "Workshop": 1,
+          "Town Hall": 1
+        },
+        "items": {
+          "order": {
+            "287256": "Scroll of Regeneration",
+            "287756": "Lesser Clarity Potion",
+            "287866": "Lesser Clarity Potion",
+            "515866": "Potion of Healing",
+            "519991": "Ivory Tower",
+            "520491": "Ivory Tower",
+            "527491": "Scroll of Regeneration",
+            "713975": "Scroll of Regeneration",
+            "746334": "Scroll of Healing",
+            "752194": "Scroll of Protection",
+            "767413": "Scroll of Healing"
+          },
+          "Scroll of Regeneration": 3,
+          "Lesser Clarity Potion": 2,
+          "Potion of Healing": 1,
+          "Ivory Tower": 2,
+          "Scroll of Healing": 2,
+          "Scroll of Protection": 1
+        },
+        "upgrades": {
+          "order": {
+            "266100": "Gunpowder",
+            "319303": "Gunpowder",
+            "364334": "Armor",
+            "445866": "Backpack",
+            "465116": "Long Rifles",
+            "574272": "Gunpowder",
+            "681350": "Armor"
+          },
+          "Gunpowder": 3,
+          "Armor": 2,
+          "Backpack": 1,
+          "Long Rifles": 1
+        },
+        "actions": 2300,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 0,
+        "color": "blue",
+        "race": "Human",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 1,
+        "race_detected": "Human",
+        "units_time": 1499350,
+        "upgrades_time": 681350,
+        "time": 1552169,
+        "leave_reason": 12,
+        "leave_result": 11,
+        "apm": 88.90784444219669
+      }
+    },
+    {
+      "2": {
+        "player_id": 2,
+        "initiator": false,
+        "name": "txd",
+        "actions_details": {
+          "Right click": 981,
+          "Select / deselect": 461,
+          "Select group hotkey": 695,
+          "Assign group hotkey": 40,
+          "Use ability": 73,
+          "Basic commands": 58,
+          "Build / train": 48,
+          "Enter build submenu": 28,
+          "Enter hero's abilities submenu": 6,
+          "Select subgroup": 20,
+          "Give item / drop item": 2,
+          "Remove unit from queue": 1,
+          "ESC pressed": 0
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 28,
+            "last_totalitems": 5,
+            "used": 409
+          },
+          "1": {
+            "assigned": 11,
+            "last_totalitems": 1,
+            "used": 276
+          },
+          "2": {
+            "assigned": 1,
+            "last_totalitems": 4,
+            "used": 10
+          }
+        },
+        "units": {
+          "order": {
+            "3194": "1 Peon",
+            "3397": "1 Peon",
+            "27553": "1 Peon",
+            "38303": "1 Peon",
+            "62288": "1 Peon",
+            "70709": "1 Peon",
+            "94803": "1 Peon",
+            "144459": "1 Grunt",
+            "194741": "1 Grunt",
+            "256741": "1 Grunt",
+            "335866": "1 Grunt",
+            "403553": "1 Shaman",
+            "462897": "1 Grunt",
+            "508834": "1 Shaman",
+            "534506": "1 Shaman",
+            "596116": "1 Tauren",
+            "605553": "1 Troll Witch Doctor",
+            "645475": "1 Shaman",
+            "676209": "1 Tauren",
+            "679522": "1 Shaman",
+            "680444": "-1 Troll Witch Doctor",
+            "698569": "1 Tauren",
+            "727006": "1 Grunt",
+            "766709": "1 Grunt",
+            "881006": "1 Grunt"
+          },
+          "Peon": 7,
+          "Grunt": 8,
+          "Shaman": 5,
+          "Tauren": 3,
+          "Troll Witch Doctor": 0
+        },
+        "heroes": {
+          "order": {
+            "69303": "Blademaster",
+            "425819": "Tauren Chieftain"
+          },
+          "Blademaster": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Wind Walk": 1,
+                "Critical Strike": 2,
+                "Mirror Image": 1
+              },
+              "order": {
+                "126256": "Wind Walk",
+                "307350": "Critical Strike",
+                "917928": "Critical Strike",
+                "1524475": "Mirror Image"
+              }
+            },
+            "ability_time": 1524475,
+            "level": 4
+          },
+          "Tauren Chieftain": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "War Stomp": 1,
+                "Endurance Aura": 1
+              },
+              "order": {
+                "484913": "War Stomp",
+                "1549631": "Endurance Aura"
+              }
+            },
+            "ability_time": 1549631,
+            "level": 2
+          }
+        },
+        "buildings": {
+          "order": {
+            "5678": "Altar of Storms",
+            "9522": "Orc Burrow",
+            "49616": "Barracks",
+            "81100": "War Mill",
+            "101475": "Voodoo Lounge",
+            "122725": "Orc Burrow",
+            "172569": "Stronghold",
+            "278100": "Watch Tower",
+            "323100": "Spirit Lodge",
+            "326741": "Orc Burrow",
+            "328444": "Fortress",
+            "466241": "Orc Burrow",
+            "520600": "Tauren Totem",
+            "530772": "Watch Tower",
+            "813334": "Orc Burrow",
+            "953694": "Orc Burrow",
+            "968772": "Watch Tower",
+            "969788": "Watch Tower",
+            "971163": "Watch Tower",
+            "971959": "Watch Tower",
+            "1323788": "Orc Burrow",
+            "1450788": "Orc Burrow"
+          },
+          "Altar of Storms": 1,
+          "Orc Burrow": 8,
+          "Barracks": 1,
+          "War Mill": 1,
+          "Voodoo Lounge": 1,
+          "Stronghold": 1,
+          "Watch Tower": 6,
+          "Spirit Lodge": 1,
+          "Fortress": 1,
+          "Tauren Totem": 1
+        },
+        "items": {
+          "order": {
+            "222444": "Lesser Clarity Potion",
+            "222850": "Healing Salve",
+            "511428": "Healing Salve",
+            "513928": "Lesser Clarity Potion",
+            "553350": "Potion of Healing",
+            "553756": "Lesser Clarity Potion",
+            "746959": "Potion of Healing"
+          },
+          "Lesser Clarity Potion": 3,
+          "Healing Salve": 2,
+          "Potion of Healing": 2
+        },
+        "upgrades": {
+          "order": {
+            "206725": "Armor",
+            "334959": "Berserker Strength",
+            "403053": "Shaman Training",
+            "508319": "Shaman Training",
+            "572069": "Melee Weapons"
+          },
+          "Armor": 1,
+          "Berserker Strength": 1,
+          "Shaman Training": 2,
+          "Melee Weapons": 1
+        },
+        "actions": 2413,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 1,
+        "color": "yellow",
+        "race": "Orc",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 5,
+        "race_detected": "Orc",
+        "units_time": 881006,
+        "upgrades_time": 572069,
+        "runits_time": 680444,
+        "runits_value": "u_Troll Witch Doctor",
+        "time": 1550850,
+        "leave_reason": 12,
+        "leave_result": 9,
+        "apm": 93.35525679466099
+      }
+    }
+  ],
+  "chat": [],
+  "header": {
+    "intro": "Warcraft III recorded game\u001a",
+    "c_size": 150865,
+    "ident": "W3XP",
+    "major_v": 27,
+    "build_v": 6059,
+    "length": 1552150,
+    "checksum": 828964064,
+    "minor_v": 0
+  }
+}

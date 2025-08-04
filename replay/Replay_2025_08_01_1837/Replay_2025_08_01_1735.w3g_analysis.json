@@ -1,0 +1,798 @@
+{
+  "filename": "C:\\Users\\tianheg\\Documents\\coding\\w3c-replay\\replay\\Replay_2025_08_01_1837\\Replay_2025_08_01_1735.w3g",
+  "game": {
+    "player_count": 4,
+    "name": "å½å°å±åç½åçæ¸¸æ (tx",
+    "speed": "Fast",
+    "visibility": "Default",
+    "observers": "No Observers",
+    "teams_together": true,
+    "lock_teams": true,
+    "full_shared_unit_control": false,
+    "random_hero": false,
+    "random_races": false,
+    "creator": "txd",
+    "map": "Maps\\FrozenThrone\\(4)TwistedMeadows.w3x",
+    "slots": 4,
+    "type": "Custom game",
+    "private": false,
+    "record_id": 25,
+    "record_length": 43,
+    "slot_records": 4,
+    "random_seed": 3176062,
+    "select_mode": "Team & race selectable",
+    "start_spots": 4,
+    "loser_team": 3,
+    "saver_id": 2,
+    "saver_name": "Neko",
+    "winner_team": 1
+  },
+  "teams": [
+    null,
+    {
+      "1": {
+        "player_id": 1,
+        "initiator": true,
+        "name": "txd",
+        "actions_details": {
+          "Right click": 629,
+          "Select / deselect": 368,
+          "Select group hotkey": 359,
+          "Assign group hotkey": 17,
+          "Use ability": 54,
+          "Basic commands": 102,
+          "Build / train": 47,
+          "Enter build submenu": 18,
+          "Enter hero's abilities submenu": 8,
+          "Select subgroup": 14,
+          "Give item / drop item": 1,
+          "Remove unit from queue": 1,
+          "ESC pressed": 0
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 14,
+            "last_totalitems": 9,
+            "used": 222
+          },
+          "1": {
+            "assigned": 3,
+            "last_totalitems": 3,
+            "used": 137
+          }
+        },
+        "units": {
+          "order": {
+            "2428": "1 Peon",
+            "14428": "1 Peon",
+            "35288": "1 Peon",
+            "35881": "1 Peon",
+            "60241": "1 Peon",
+            "82085": "1 Peon",
+            "94256": "1 Peon",
+            "154585": "1 Grunt",
+            "180397": "1 Grunt",
+            "211085": "1 Grunt",
+            "267991": "1 Grunt",
+            "306288": "1 Grunt",
+            "324241": "1 Grunt",
+            "375288": "1 Grunt",
+            "497022": "1 Grunt",
+            "499835": "-1 Grunt",
+            "587006": "1 Wind Rider",
+            "588397": "1 Wind Rider",
+            "729381": "1 Wind Rider",
+            "730475": "1 Grunt"
+          },
+          "Peon": 7,
+          "Grunt": 8,
+          "Wind Rider": 3
+        },
+        "heroes": {
+          "order": {
+            "95788": "Blademaster",
+            "503913": "Shadow Hunter"
+          },
+          "Blademaster": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Wind Walk": 1,
+                "Critical Strike": 2,
+                "Mirror Image": 1
+              },
+              "order": {
+                "152772": "Wind Walk",
+                "317225": "Critical Strike",
+                "667444": "Critical Strike",
+                "912147": "Mirror Image"
+              }
+            },
+            "ability_time": 912147,
+            "level": 4
+          },
+          "Shadow Hunter": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Healing Wave": 1,
+                "Hex": 2,
+                "Serpent Ward": 1
+              },
+              "order": {
+                "561881": "Healing Wave",
+                "697538": "Hex",
+                "893069": "Serpent Ward",
+                "1057819": "Hex"
+              }
+            },
+            "ability_time": 1057819,
+            "level": 4
+          }
+        },
+        "buildings": {
+          "order": {
+            "5960": "Altar of Storms",
+            "10616": "Orc Burrow",
+            "51710": "Barracks",
+            "73288": "War Mill",
+            "105319": "Orc Burrow",
+            "120053": "Voodoo Lounge",
+            "194006": "Barracks",
+            "229647": "Orc Burrow",
+            "359647": "Stronghold",
+            "440553": "Orc Burrow",
+            "507553": "Beastiary",
+            "617663": "Fortress",
+            "659006": "Orc Burrow",
+            "781506": "Tauren Totem"
+          },
+          "Altar of Storms": 1,
+          "Orc Burrow": 5,
+          "Barracks": 2,
+          "War Mill": 1,
+          "Voodoo Lounge": 1,
+          "Stronghold": 1,
+          "Beastiary": 1,
+          "Fortress": 1,
+          "Tauren Totem": 1
+        },
+        "items": {
+          "order": {
+            "247413": "Healing Salve",
+            "247835": "Lesser Clarity Potion",
+            "248131": "Scroll of Speed",
+            "387756": "Healing Salve",
+            "388366": "Scroll of Speed",
+            "389178": "Healing Salve",
+            "736194": "Healing Salve",
+            "737788": "Scroll of Speed",
+            "738506": "Potion of Healing"
+          },
+          "Healing Salve": 4,
+          "Lesser Clarity Potion": 1,
+          "Scroll of Speed": 3,
+          "Potion of Healing": 1
+        },
+        "upgrades": {
+          "order": {
+            "148147": "Armor",
+            "419319": "Melee Weapons",
+            "505522": "Berserker Strength",
+            "520819": "Armor",
+            "636835": "Melee Weapons",
+            "765038": "Envenomed Spears"
+          },
+          "Armor": 2,
+          "Melee Weapons": 2,
+          "Berserker Strength": 1,
+          "Envenomed Spears": 1
+        },
+        "actions": 1618,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 1,
+        "color": "yellow",
+        "race": "Random",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 3,
+        "race_detected": "Orc",
+        "units_time": 730475,
+        "upgrades_time": 765038,
+        "runits_time": 499835,
+        "runits_value": "u_Grunt",
+        "time": 1062756,
+        "leave_reason": 12,
+        "leave_result": 7,
+        "apm": 91.34740241410069
+      },
+      "3": {
+        "player_id": 3,
+        "initiator": false,
+        "name": "jians",
+        "actions_details": {
+          "Right click": 474,
+          "Select / deselect": 240,
+          "Select group hotkey": 646,
+          "Assign group hotkey": 32,
+          "Use ability": 68,
+          "Basic commands": 130,
+          "Build / train": 53,
+          "Enter build submenu": 18,
+          "Enter hero's abilities submenu": 7,
+          "Select subgroup": 21,
+          "Give item / drop item": 0,
+          "Remove unit from queue": 4,
+          "ESC pressed": 0
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 21,
+            "last_totalitems": 6,
+            "used": 386
+          },
+          "1": {
+            "assigned": 8,
+            "last_totalitems": 8,
+            "used": 222
+          },
+          "3": {
+            "assigned": 1,
+            "last_totalitems": 1,
+            "used": 35
+          },
+          "4": {
+            "assigned": 1,
+            "last_totalitems": 1,
+            "used": 2
+          },
+          "5": {
+            "assigned": 1,
+            "last_totalitems": 1,
+            "used": 1
+          }
+        },
+        "units": {
+          "order": {
+            "3428": "1 Peon",
+            "3522": "1 Peon",
+            "11928": "1 Peon",
+            "14928": "-1 Peon",
+            "25850": "1 Peon",
+            "39600": "1 Peon",
+            "61741": "1 Peon",
+            "67366": "1 Peon",
+            "102210": "1 Grunt",
+            "115413": "1 Peon",
+            "153788": "1 Grunt",
+            "191788": "1 Grunt",
+            "353178": "1 Grunt",
+            "450928": "1 Peon",
+            "451131": "1 Peon",
+            "503319": "1 Shaman",
+            "670475": "1 Wind Rider",
+            "768335": "1 Wind Rider",
+            "795991": "1 Wind Rider",
+            "797600": "1 Wind Rider",
+            "814850": "1 Shaman",
+            "974850": "1 Grunt",
+            "1007288": "1 Grunt"
+          },
+          "Peon": 9,
+          "Grunt": 6,
+          "Shaman": 2,
+          "Wind Rider": 4
+        },
+        "heroes": {
+          "order": {
+            "77835": "Far Seer",
+            "473100": "Tauren Chieftain"
+          },
+          "Far Seer": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Feral Spirit": 2,
+                "Chain Lighting": 2
+              },
+              "order": {
+                "137725": "Feral Spirit",
+                "544350": "Chain Lighting",
+                "715631": "Feral Spirit",
+                "947303": "Chain Lighting"
+              }
+            },
+            "ability_time": 947303,
+            "level": 4
+          },
+          "Tauren Chieftain": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "War Stomp": 2,
+                "Endurance Aura": 1
+              },
+              "order": {
+                "632288": "War Stomp",
+                "707069": "Endurance Aura",
+                "892381": "War Stomp"
+              }
+            },
+            "ability_time": 892381,
+            "level": 3
+          }
+        },
+        "buildings": {
+          "order": {
+            "7913": "Altar of Storms",
+            "20850": "Orc Burrow",
+            "30428": "Barracks",
+            "97381": "Orc Burrow",
+            "124960": "Voodoo Lounge",
+            "183116": "Voodoo Lounge",
+            "189850": "Voodoo Lounge",
+            "202647": "Voodoo Lounge",
+            "253803": "Stronghold",
+            "356522": "Voodoo Lounge",
+            "358756": "Orc Burrow",
+            "388756": "War Mill",
+            "410100": "Orc Burrow",
+            "417022": "Spirit Lodge",
+            "589600": "Fortress",
+            "598178": "Beastiary",
+            "649163": "Orc Burrow",
+            "909616": "Orc Burrow"
+          },
+          "Altar of Storms": 1,
+          "Orc Burrow": 6,
+          "Barracks": 1,
+          "Voodoo Lounge": 5,
+          "Stronghold": 1,
+          "War Mill": 1,
+          "Spirit Lodge": 1,
+          "Fortress": 1,
+          "Beastiary": 1
+        },
+        "items": {
+          "order": {
+            "423225": "Healing Salve",
+            "423413": "Healing Salve",
+            "423913": "Lesser Clarity Potion",
+            "477444": "Scroll of Town Portal",
+            "577303": "Potion of Lesser Invulnerability",
+            "583444": "Scroll of Healing",
+            "655460": "Healing Salve",
+            "655866": "Lesser Clarity Potion",
+            "660631": "Lesser Clarity Potion",
+            "667131": "Healing Salve"
+          },
+          "Healing Salve": 4,
+          "Lesser Clarity Potion": 3,
+          "Scroll of Town Portal": 1,
+          "Potion of Lesser Invulnerability": 1,
+          "Scroll of Healing": 1
+        },
+        "upgrades": {
+          "order": {
+            "645210": "Berserker Strength",
+            "650897": "Ranged Weapons",
+            "698741": "Shaman Training",
+            "814444": "Shaman Training"
+          },
+          "Berserker Strength": 1,
+          "Ranged Weapons": 1,
+          "Shaman Training": 2
+        },
+        "actions": 1693,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 1,
+        "color": "green",
+        "race": "Random",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 8,
+        "race_detected": "Orc",
+        "units_time": 1007288,
+        "runits_time": 14928,
+        "runits_value": "u_Peon",
+        "upgrades_time": 814444,
+        "time": 1062756,
+        "leave_reason": 12,
+        "leave_result": 7,
+        "apm": 95.58167632081117
+      }
+    },
+    null,
+    {
+      "2": {
+        "player_id": 2,
+        "initiator": false,
+        "name": "Neko",
+        "actions_details": {
+          "Right click": 700,
+          "Select / deselect": 230,
+          "Select group hotkey": 298,
+          "Assign group hotkey": 9,
+          "Use ability": 48,
+          "Basic commands": 81,
+          "Build / train": 38,
+          "Enter build submenu": 19,
+          "Enter hero's abilities submenu": 5,
+          "Select subgroup": 31,
+          "Give item / drop item": 0,
+          "Remove unit from queue": 0,
+          "ESC pressed": 3
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 1,
+            "last_totalitems": 1,
+            "used": 75
+          },
+          "2": {
+            "assigned": 8,
+            "last_totalitems": 10,
+            "used": 223
+          }
+        },
+        "units": {
+          "order": {
+            "2022": "1 Peon",
+            "2116": "1 Peon",
+            "27585": "1 Peon",
+            "39913": "1 Peon",
+            "57428": "1 Peon",
+            "64725": "1 Peon",
+            "96491": "1 Peon",
+            "121960": "1 Grunt",
+            "143538": "1 Grunt",
+            "249335": "1 Grunt",
+            "292116": "1 Grunt",
+            "361147": "1 Grunt",
+            "600788": "1 Spirit Walker",
+            "651397": "1 Tauren",
+            "701538": "1 Tauren",
+            "718241": "1 Peon",
+            "718335": "1 Peon",
+            "723335": "1 Tauren",
+            "751194": "1 Tauren",
+            "768428": "1 Peon"
+          },
+          "Peon": 10,
+          "Grunt": 5,
+          "Spirit Walker": 1,
+          "Tauren": 4
+        },
+        "heroes": {
+          "order": {
+            "70663": "Blademaster",
+            "359756": "Shadow Hunter"
+          },
+          "Blademaster": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Wind Walk": 1,
+                "Critical Strike": 2
+              },
+              "order": {
+                "129788": "Wind Walk",
+                "442647": "Critical Strike",
+                "641053": "Critical Strike"
+              }
+            },
+            "ability_time": 641053,
+            "level": 3
+          },
+          "Shadow Hunter": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Hex": 1,
+                "Healing Wave": 1
+              },
+              "order": {
+                "432741": "Hex",
+                "644413": "Healing Wave"
+              }
+            },
+            "ability_time": 644413,
+            "level": 2
+          }
+        },
+        "buildings": {
+          "order": {
+            "5256": "Altar of Storms",
+            "19631": "Orc Burrow",
+            "48506": "Barracks",
+            "90038": "Voodoo Lounge",
+            "103210": "Orc Burrow",
+            "164506": "Orc Burrow",
+            "199741": "Stronghold",
+            "212303": "War Mill",
+            "389366": "Spirit Lodge",
+            "395413": "Orc Burrow",
+            "405272": "Fortress",
+            "495631": "Voodoo Lounge",
+            "519522": "Spirit Lodge",
+            "571178": "Tauren Totem",
+            "608913": "Orc Burrow",
+            "620506": "Watch Tower",
+            "625319": "Watch Tower",
+            "827241": "Watch Tower",
+            "829381": "Watch Tower"
+          },
+          "Altar of Storms": 1,
+          "Orc Burrow": 5,
+          "Barracks": 1,
+          "Voodoo Lounge": 2,
+          "Stronghold": 1,
+          "War Mill": 1,
+          "Spirit Lodge": 2,
+          "Fortress": 1,
+          "Tauren Totem": 1,
+          "Watch Tower": 4
+        },
+        "items": {
+          "order": {
+            "339569": "Healing Salve",
+            "339663": "Healing Salve",
+            "339756": "Healing Salve",
+            "743928": "Scroll of Healing",
+            "744131": "Scroll of Healing",
+            "744538": "Scroll of Protection"
+          },
+          "Healing Salve": 3,
+          "Scroll of Healing": 2,
+          "Scroll of Protection": 1
+        },
+        "upgrades": {
+          "order": {
+            "766131": "Spirit Walker Training"
+          },
+          "Spirit Walker Training": 1
+        },
+        "actions": 1462,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 3,
+        "color": "blue",
+        "race": "Random",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 1,
+        "race_detected": "Orc",
+        "units_time": 768428,
+        "upgrades_time": 766131,
+        "time": 1062756,
+        "leave_reason": 12,
+        "leave_result": 7,
+        "apm": 82.54011268814291
+      },
+      "4": {
+        "player_id": 4,
+        "initiator": false,
+        "name": "FrostTear",
+        "actions_details": {
+          "Right click": 426,
+          "Select / deselect": 505,
+          "Select group hotkey": 287,
+          "Assign group hotkey": 23,
+          "Use ability": 46,
+          "Basic commands": 136,
+          "Build / train": 56,
+          "Enter build submenu": 18,
+          "Enter hero's abilities submenu": 6,
+          "Select subgroup": 23,
+          "Give item / drop item": 1,
+          "Remove unit from queue": 0,
+          "ESC pressed": 1
+        },
+        "hotkeys": {
+          "0": {
+            "assigned": 9,
+            "last_totalitems": 6,
+            "used": 209
+          },
+          "1": {
+            "assigned": 7,
+            "last_totalitems": 4,
+            "used": 18
+          },
+          "2": {
+            "assigned": 1,
+            "last_totalitems": 1,
+            "used": 11
+          },
+          "3": {
+            "assigned": 1,
+            "last_totalitems": 1,
+            "used": 36
+          },
+          "4": {
+            "assigned": 5,
+            "last_totalitems": 2,
+            "used": 13
+          }
+        },
+        "units": {
+          "order": {
+            "2022": "1 Peon",
+            "9303": "1 Peon",
+            "28397": "1 Peon",
+            "40803": "1 Peon",
+            "54522": "1 Peon",
+            "63928": "1 Peon",
+            "94475": "1 Peon",
+            "115725": "1 Grunt",
+            "144538": "1 Grunt",
+            "196647": "1 Grunt",
+            "233038": "1 Grunt",
+            "299100": "1 Grunt",
+            "425006": "1 Peon",
+            "429131": "1 Forest Troll Shadow Priest",
+            "473506": "1 Peon",
+            "473710": "1 Peon",
+            "498038": "1 Peon",
+            "518694": "1 Grunt",
+            "521538": "1 Peon",
+            "532835": "1 Peon",
+            "533022": "1 Peon",
+            "564022": "1 Peon",
+            "628147": "1 Peon",
+            "641960": "1 Goblin Shredder",
+            "704631": "1 Raider",
+            "713631": "1 Grunt",
+            "775100": "1 Raider",
+            "822147": "2 Raider",
+            "843631": "1 Raider",
+            "877100": "1 Raider",
+            "908022": "1 Raider"
+          },
+          "Peon": 16,
+          "Grunt": 7,
+          "Forest Troll Shadow Priest": 1,
+          "Goblin Shredder": 1,
+          "Raider": 7
+        },
+        "heroes": {
+          "order": {
+            "71585": "Blademaster",
+            "597678": "Shadow Hunter"
+          },
+          "Blademaster": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Wind Walk": 2,
+                "Critical Strike": 2
+              },
+              "order": {
+                "128366": "Wind Walk",
+                "419506": "Critical Strike",
+                "657881": "Wind Walk",
+                "1030600": "Critical Strike"
+              }
+            },
+            "ability_time": 1030600,
+            "level": 4
+          },
+          "Shadow Hunter": {
+            "revivals": 1,
+            "retraining_time": 0,
+            "abilities": {
+              "0": {
+                "Healing Wave": 1,
+                "Hex": 1
+              },
+              "order": {
+                "668256": "Healing Wave",
+                "922569": "Hex"
+              }
+            },
+            "ability_time": 922569,
+            "level": 2
+          }
+        },
+        "buildings": {
+          "order": {
+            "4647": "Altar of Storms",
+            "20647": "Orc Burrow",
+            "49506": "Barracks",
+            "91147": "Voodoo Lounge",
+            "110866": "Orc Burrow",
+            "166913": "Stronghold",
+            "370881": "Orc Burrow",
+            "401631": "Orc Burrow",
+            "470272": "Orc Burrow",
+            "594647": "Beastiary",
+            "626741": "War Mill",
+            "651303": "Orc Burrow",
+            "747960": "Orc Burrow",
+            "776694": "Beastiary",
+            "979085": "Fortress"
+          },
+          "Altar of Storms": 1,
+          "Orc Burrow": 7,
+          "Barracks": 1,
+          "Voodoo Lounge": 1,
+          "Stronghold": 1,
+          "Beastiary": 2,
+          "War Mill": 1,
+          "Fortress": 1
+        },
+        "items": {
+          "order": {
+            "156710": "Healing Salve",
+            "157100": "Lesser Clarity Potion",
+            "255413": "Boots of Speed",
+            "256194": "Circlet of Nobility",
+            "545569": "Potion of Lesser Invulnerability",
+            "660741": "Healing Salve"
+          },
+          "Healing Salve": 2,
+          "Lesser Clarity Potion": 1,
+          "Boots of Speed": 1,
+          "Circlet of Nobility": 1,
+          "Potion of Lesser Invulnerability": 1
+        },
+        "upgrades": {
+          "order": {
+            "397819": "Berserker Strength",
+            "715428": "Melee Weapons",
+            "717741": "Ensnare",
+            "721538": "Pillage",
+            "779116": "Armor",
+            "841631": "Melee Weapons",
+            "982241": "Armor"
+          },
+          "Berserker Strength": 1,
+          "Melee Weapons": 2,
+          "Ensnare": 1,
+          "Pillage": 1,
+          "Armor": 2
+        },
+        "actions": 1528,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 3,
+        "color": "red",
+        "race": "Random",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 4,
+        "race_detected": "Orc",
+        "units_time": 908022,
+        "upgrades_time": 982241,
+        "time": 1062756,
+        "leave_reason": 12,
+        "leave_result": 7,
+        "apm": 86.26627372604813
+      }
+    }
+  ],
+  "chat": [],
+  "header": {
+    "intro": "Warcraft III recorded game\u001a",
+    "c_size": 141511,
+    "ident": "W3XP",
+    "major_v": 27,
+    "build_v": 6059,
+    "length": 1062750,
+    "checksum": -1756810577,
+    "minor_v": 0
+  }
+}

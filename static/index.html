@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Replay Browser</title>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="app">
+            <!-- Main Analysis Page -->
+            <div class="main-container">
+                <div class="main-header">
+                    <h1>Replay Analyzer</h1>
+                    <p>Analyze your Warcraft III replay files</p>
+                    <div class="header-buttons">
+                        <button class="select-file-btn" @click="openModal">
+                            📁 Select Replay File
+                        </button>
+                        <button class="convert-btn" @click="convertAllFiles" :disabled="converting">
+                            {{ converting ? '🔄 Converting...' : '⚡ Convert W3G Files' }}
+                        </button>
+                    </div>
+                </div>
+
+                <div class="analysis-content">
+                    <div v-if="!selectedFile" class="dashboard-container">
+                        <div class="dashboard-header">
+                            <h2>📊 Games Dashboard</h2>
+                            <p>Statistics from {{ dashboardStats ? dashboardStats.totalGames : 0 }} analyzed games</p>
+                            <button v-if="!loadingDashboard" class="refresh-btn" @click="loadDashboard">
+                                🔄 Refresh Stats
+                            </button>
+                        </div>
+
+                        <div v-if="loadingDashboard" class="loading-dashboard">
+                            <div class="loading-spinner">⏳</div>
+                            <p>Loading dashboard statistics...</p>
+                        </div>
+
+                        <div v-else-if="!dashboardStats || dashboardStats.totalGames === 0" class="no-stats">
+                            <h3>No game statistics available</h3>
+                            <p>Convert some W3G files to JSON to see dashboard statistics</p>
+                            <button class="convert-btn" @click="convertAllFiles" :disabled="converting">
+                                {{ converting ? '🔄 Converting...' : '⚡ Convert W3G Files' }}
+                            </button>
+                        </div>
+
+                        <div v-else class="dashboard-content">
+                            <!-- Player Rankings -->
+                            <div class="dashboard-section">
+                                <h3>🏆 Player Rankings</h3>
+                                <div class="ranking-table">
+                                    <div class="ranking-header">
+                                        <div class="rank-col">Rank</div>
+                                        <div class="player-col">Player</div>
+                                        <div class="stats-col">Games</div>
+                                        <div class="stats-col">Wins</div>
+                                        <div class="stats-col">Losses</div>
+                                        <div class="stats-col">Win Rate</div>
+                                    </div>
+                                    <div v-for="(player, index) in getPlayerRankings()" :key="player.name" class="ranking-row">
+                                        <div class="rank-col">
+                                            <span class="rank-number" :class="{ 
+                                                'rank-gold': index === 0, 
+                                                'rank-silver': index === 1, 
+                                                'rank-bronze': index === 2 
+                                            }">
+                                                {{ index + 1 }}
+                                            </span>
+                                        </div>
+                                        <div class="player-col">{{ player.name }}</div>
+                                        <div class="stats-col">{{ player.totalGames }}</div>
+                                        <div class="stats-col">{{ player.wins }}</div>
+                                        <div class="stats-col">{{ player.losses }}</div>
+                                        <div class="stats-col">
+                                            <span class="win-rate" :class="{ 
+                                                'high-winrate': player.winRate >= 70,
+                                                'medium-winrate': player.winRate >= 50 && player.winRate < 70,
+                                                'low-winrate': player.winRate < 50
+                                            }">
+                                                {{ player.winRate }}%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Player Race Statistics -->
+                            <div class="dashboard-section">
+                                <h3>🎲 Race Performance</h3>
+                                <div class="race-stats-grid">
+                                    <div v-for="player in getPlayerRankings()" :key="player.name" class="player-race-card">
+                                        <h4>{{ player.name }}</h4>
+                                        <div class="race-list">
+                                            <div v-for="raceData in getPlayerRaceStats(player.name)" :key="raceData.race" class="race-item">
+                                                <div class="race-info">
+                                                    <span class="race-name">{{ raceData.race }}</span>
+                                                    <span class="race-games">{{ raceData.games }} games</span>
+                                                </div>
+                                                <div class="race-winrate">
+                                                    <span class="winrate-text">{{ raceData.winRate }}%</span>
+                                                    <div class="winrate-bar">
+                                                        <div class="winrate-fill" :style="{ width: raceData.winRate + '%' }"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Favorite Heroes -->
+                            <div class="dashboard-section">
+                                <h3>🦸 Favorite Heroes</h3>
+                                <div class="hero-stats-grid">
+                                    <div v-for="player in getPlayerRankings()" :key="player.name" class="player-hero-card">
+                                        <h4>{{ player.name }}</h4>
+                                        <div class="race-tabs">
+                                            <div v-for="raceData in getPlayerRaceStats(player.name)" :key="raceData.race" class="race-tab">
+                                                <h5>{{ raceData.race }}</h5>
+                                                <div class="hero-list">
+                                                    <div v-for="hero in getPlayerHeroStats(player.name, raceData.race).slice(0, 3)" :key="hero.heroName" class="hero-item">
+                                                        <div class="hero-info">
+                                                            <span class="hero-name">{{ hero.heroName }}</span>
+                                                            <span class="hero-percentage">{{ hero.percentage }}%</span>
+                                                        </div>
+                                                        <div class="hero-stats">
+                                                            <span class="hero-games">{{ hero.games }} games</span>
+                                                            <span class="hero-winrate" :class="{ 
+                                                                'high-winrate': hero.winRate >= 70,
+                                                                'medium-winrate': hero.winRate >= 50 && hero.winRate < 70,
+                                                                'low-winrate': hero.winRate < 50
+                                                            }">{{ hero.winRate }}% WR</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div v-else>
+                        <!-- Game Overview -->
+                        <div class="file-info">
+                            <div class="info-card">
+                                <h3>📄 File Information</h3>
+                                <div class="info-item">
+                                    <span class="info-label">File Name:</span>
+                                    <span class="info-value">{{ selectedFile.name }}</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">File Size:</span>
+                                    <span class="info-value">{{ formatFileSize(selectedFile.size) }}</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Path:</span>
+                                    <span class="info-value">{{ selectedFile.path }}</span>
+                                </div>
+                            </div>
+
+                            <div class="info-card">
+                                <h3>🎮 Game Information</h3>
+                                <div v-if="analysisData">
+                                    <div class="info-item">
+                                        <span class="info-label">Winners:</span>
+                                        <span class="info-value">
+                                            <span v-for="(winner, index) in getWinners()" :key="winner.player_id" class="winner-item">
+                                                <span class="player-color-dot" :style="{ backgroundColor: getPlayerColor(winner.color) }"></span>
+                                                {{ winner.name }}
+                                                <span v-if="index < getWinners().length - 1">, </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Map:</span>
+                                        <span class="info-value">{{ getMapName(analysisData.game.map) }}</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Players:</span>
+                                        <span class="info-value">{{ analysisData.game.player_count }}</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Duration:</span>
+                                        <span class="info-value">{{ formatGameTime(analysisData.header.length) }}</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Game Speed:</span>
+                                        <span class="info-value">{{ analysisData.game.speed }}</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-label">Version:</span>
+                                        <span class="info-value">{{ analysisData.header.ident }} v{{ analysisData.header.major_v }}.{{ analysisData.header.build_v }}</span>
+                                    </div>
+                                </div>
+                                <div v-else class="info-item">
+                                    <span class="info-label">Status:</span>
+                                    <span class="info-value">
+                                        <button class="select-file-action" @click="analyzeFile" :disabled="analyzing">
+                                            {{ analyzing ? 'Analyzing...' : '🔍 Analyze File' }}
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Player Analysis -->
+                        <div v-if="analysisData && activePlayers.length > 0" class="analysis-section">
+                            <h2 class="section-title">👥 Player Analysis</h2>
+                            <div class="players-grid">
+                                <div v-for="player in activePlayers" :key="player.player_id" class="player-card">
+                                    <div class="player-header">
+                                        <div class="player-name">
+                                            <span class="player-color" :style="{ backgroundColor: getPlayerColor(player.color) }"></span>
+                                            {{ player.name }}
+                                        </div>
+                                        <div class="player-race">
+                                            {{ player.race }}
+                                            <span v-if="player.race === 'Random' && player.race_detected" class="detected-race">
+                                                ({{ player.race_detected }})
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="player-stats">
+                                        <div class="stat-item">
+                                            <span class="stat-label">APM:</span>
+                                            <span class="stat-value">{{ Math.round(player.apm || 0) }}</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <span class="stat-label">Actions:</span>
+                                            <span class="stat-value">{{ player.actions }}</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <span class="stat-label">Team:</span>
+                                            <span class="stat-value">{{ getTeamName(player.team) }}</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Player Statistics -->
+                                    <div class="player-details">
+                                        <div class="detail-section">
+                                            <h4>⚔️ Army Composition</h4>
+                                            <div class="unit-stats">
+                                                <div class="stat-summary">
+                                                    <span>Total Units: {{ getTotalUnits(player.units) }}</span>
+                                                </div>
+                                                <div class="unit-list">
+                                                    <div v-for="(count, unit) in getFilteredUnits(player.units)" :key="unit" class="unit-item">
+                                                        <span>{{ unit }}</span>
+                                                        <span>{{ count }}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div v-if="getFilteredHeroes(player.heroes).length > 0" class="detail-section">
+                                            <h4>🦸 Heroes</h4>
+                                            <div class="hero-list">
+                                                <div v-for="hero in getFilteredHeroes(player.heroes)" :key="hero.name" class="hero-item">
+                                                    <div class="hero-header">
+                                                        <div class="hero-name">{{ hero.name }}</div>
+                                                        <div class="hero-level">{{ hero.level }}</div>
+                                                    </div>
+                                                    <div class="hero-stats">
+                                                        <div class="hero-stat">
+                                                            <span class="stat-label">Revivals:</span>
+                                                            <span class="stat-value">{{ hero.revivals }}</span>
+                                                        </div>
+                                                        <div v-if="hero.retraining_time > 0" class="hero-stat">
+                                                            <span class="stat-label">Retraining Time:</span>
+                                                            <span class="stat-value">{{ formatGameTime(hero.retraining_time) }}</span>
+                                                        </div>
+                                                    </div>
+                                                    <div v-if="getHeroAbilities(hero.abilities).length > 0" class="hero-abilities">
+                                                        <div class="abilities-header">Abilities:</div>
+                                                        <div class="ability-list">
+                                                            <div v-for="ability in getHeroAbilities(hero.abilities)" :key="ability.name" class="ability-item">
+                                                                <span class="ability-name">{{ ability.name }}</span>
+                                                                <span class="ability-level">{{ ability.level }}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="detail-section">
+                                            <h4>🏗️ Buildings</h4>
+                                            <div class="building-stats">
+                                                <div class="stat-summary">
+                                                    <span>Total Buildings: {{ getTotalBuildings(player.buildings) }}</span>
+                                                </div>
+                                                <div class="building-list">
+                                                    <div v-for="(count, building) in getFilteredBuildings(player.buildings)" :key="building" class="building-item">
+                                                        <span>{{ building }}</span>
+                                                        <span>{{ count }}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div v-if="player.items && getTotalItems(player.items) > 0" class="detail-section">
+                                            <h4>🎒 Items</h4>
+                                            <div class="item-stats">
+                                                <div class="stat-summary">
+                                                    <span>Total Items: {{ getTotalItems(player.items) }}</span>
+                                                </div>
+                                                <div class="item-list">
+                                                    <div v-for="(count, item) in getFilteredItems(player.items)" :key="item" class="item-item">
+                                                        <span>{{ item }}</span>
+                                                        <span>{{ count }}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Details Chart -->
+                        <div v-if="analysisData && activePlayers.length > 0" class="analysis-section">
+                            <h2 class="section-title">📈 Action Details Comparison</h2>
+                            <div class="chart-section">
+                                <div class="chart-controls">
+                                    <label for="actionSelect">Select Action Type:</label>
+                                    <select id="actionSelect" v-model="selectedAction" @change="updateChart" class="action-select">
+                                        <option v-for="action in availableActions" :key="action" :value="action">
+                                            {{ action }}
+                                        </option>
+                                    </select>
+                                </div>
+                                
+                                <div class="chart-container">
+                                    <div class="chart-title">{{ selectedAction }} Comparison</div>
+                                    <div class="chart-bars">
+                                        <div v-for="player in activePlayers" :key="player.player_id" class="chart-bar-container">
+                                            <div class="chart-bar-wrapper">
+                                                <div 
+                                                    class="chart-bar" 
+                                                    :style="{ 
+                                                        height: getBarHeight(player, selectedAction) + '%',
+                                                        backgroundColor: getPlayerColor(player.color) 
+                                                    }"
+                                                >
+                                                    <span class="bar-value">{{ getActionValue(player, selectedAction) }}</span>
+                                                </div>
+                                            </div>
+                                            <div class="chart-player-label">
+                                                <span class="player-color-dot" :style="{ backgroundColor: getPlayerColor(player.color) }"></span>
+                                                {{ player.name }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Game Summary -->
+                        <div v-if="analysisData" class="analysis-section">
+                            <h2 class="section-title">📊 Game Summary</h2>
+                            <div class="summary-grid">
+                                <div class="summary-card">
+                                    <h4>🏆 Match Result</h4>
+                                    <div class="result-info">
+                                        <div>Winner: {{ getWinnerTeamName(analysisData.game.winner_team) }}</div>
+                                        <div>Game Type: {{ analysisData.game.type }}</div>
+                                        <div>Creator: {{ analysisData.game.creator }}</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="summary-card">
+                                    <h4>⚙️ Game Settings</h4>
+                                    <div class="settings-info">
+                                        <div>Speed: {{ analysisData.game.speed }}</div>
+                                        <div>Visibility: {{ analysisData.game.visibility }}</div>
+                                        <div>Teams Locked: {{ analysisData.game.lock_teams ? 'Yes' : 'No' }}</div>
+                                        <div>Random Hero: {{ analysisData.game.random_hero ? 'Yes' : 'No' }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="analysis-section">
+                            <div class="actions-bar">
+                                <button class="action-btn primary" @click="downloadFile(selectedFile.path)">
+                                    ⬇️ Download Replay
+                                </button>
+                                <button class="action-btn secondary" @click="selectNewFile">
+                                    📁 Select Different File
+                                </button>
+                                <button v-if="analysisData" class="action-btn secondary" @click="exportAnalysis">
+                                    📄 Export Analysis
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- File Selection Modal -->
+            <div v-if="showModal" class="modal-overlay" :class="{ closing: isClosing }" @click="closeModal">
+                <div class="modal" @click.stop>
+                    <div class="modal-header">
+                        <h2>📁 Select Replay File</h2>
+                        <button class="close-btn" @click="closeModal">&times;</button>
+                    </div>
+
+                    <div class="modal-content">
+                        <div class="container">
+                            <div class="header">
+                                <h1>Browse Replay Files</h1>
+                                <p>Choose a .w3g file to analyze</p>
+                            </div>
+
+                            <div class="content">
+                                <div class="search-bar">
+                                    <input
+                                        type="text"
+                                        v-model="searchTerm"
+                                        @input="filterItems"
+                                        placeholder="🔍 Search in current folder..." />
+                                </div>
+
+                                <div id="fileContainer">
+                                    <div v-if="loading" class="loading">Loading replay files...</div>
+                                    <div v-else-if="error" class="error">❌ {{ error }}</div>
+                                    <div v-else-if="filteredItems.length === 0" class="no-files">
+                                        No folders or .w3g files found in this directory
+                                    </div>
+                                    <div v-else>
+                                        <!-- Breadcrumb -->
+                                        <div class="breadcrumb">
+                                            <span class="breadcrumb-item" @click="loadDirectory('')">📁 replay</span>
+                                            <template v-for="(part, index) in breadcrumbParts" :key="index">
+                                                / <span 
+                                                    class="breadcrumb-item" 
+                                                    @click="loadDirectory(getBreadcrumbPath(index))"
+                                                >{{ part }}</span>
+                                            </template>
+                                        </div>
+
+                                        <!-- File Grid -->
+                                        <div class="file-grid">
+                                            <div 
+                                                v-for="item in filteredItems" 
+                                                :key="item.path"
+                                                class="file-card" 
+                                                :class="{ 'selected': selectedFile && selectedFile.path === item.path, 'has-preview': item.preview }"
+                                                @click="handleItemClick(item)"
+                                            >
+                                                <div class="file-header">
+                                                    <div class="file-icon" :class="{ 'folder': item.type === 'folder' }">
+                                                        {{ item.type === 'folder' ? 'DIR' : 'W3G' }}
+                                                    </div>
+                                                    <div class="file-info">
+                                                        <div class="file-name">{{ item.name }}</div>
+                                                        <div class="file-path">{{ item.path || 'replay' }}</div>
+                                                        <div class="file-details">
+                                                            <span>{{ item.type === 'file' ? '📄 ' + formatFileSize(item.size) : '📁 Folder' }}</span>
+                                                            <span>📅 {{ formatDate(item.modified) }}</span>
+                                                            <span v-if="item.hasAnalysis" class="cache-indicator">💾 Cached</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Preview Section for W3G files with cache -->
+                                                <div v-if="item.preview" class="file-preview">
+                                                    <div class="preview-header">
+                                                        <div class="game-info">
+                                                            <span class="player-count">👥 {{ item.preview.players.length }} Players</span>
+                                                            <span class="map-name">🗺️ {{ item.preview.gameInfo.map }}</span>
+                                                            <span class="duration">⏱️ {{ formatGameTime(item.preview.gameInfo.duration) }}</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="preview-players">
+                                                        <div class="players-section">
+                                                            <div class="section-title">Players:</div>
+                                                            <div class="player-list">
+                                                                <div v-for="player in item.preview.players" :key="player.name" class="preview-player">
+                                                                    <span class="player-color-dot" :style="{ backgroundColor: getPlayerColor(player.color) }"></span>
+                                                                    <span class="player-name">{{ player.name }}</span>
+                                                                    <span class="player-race">
+                                                                        {{ player.race }}
+                                                                        <span v-if="player.race === 'Random' && player.raceDetected" class="detected-race-small">
+                                                                            ({{ player.raceDetected }})
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="player-apm">{{ player.apm }} APM</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div v-if="item.preview.winners.length > 0" class="winners-section">
+                                                            <div class="section-title">Winners:</div>
+                                                            <div class="winner-list">
+                                                                <span v-for="(winner, index) in item.preview.winners" :key="winner.name" class="preview-winner">
+                                                                    <span class="player-color-dot" :style="{ backgroundColor: getPlayerColor(winner.color) }"></span>
+                                                                    {{ winner.name }}
+                                                                    <span v-if="index < item.preview.winners.length - 1">&nbsp; &nbsp;</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="file-actions">
+                                                    <button 
+                                                        v-if="item.type === 'folder'"
+                                                        class="download-btn folder-btn"
+                                                        @click.stop="loadDirectory(item.path)"
+                                                    >
+                                                        📂 Open
+                                                    </button>
+                                                    <button 
+                                                        v-else
+                                                        class="download-btn"
+                                                        @click.stop="selectFile(item)"
+                                                    >
+                                                        {{ selectedFile && selectedFile.path === item.path ? '✓ Selected' : '✓ Select' }}
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conversion Report Modal -->
+            <div v-if="showConversionReport" class="modal-overlay" @click="closeConversionReport">
+                <div class="conversion-report-modal" @click.stop>
+                    <div class="report-header">
+                        <div class="report-icon">
+                            <span v-if="conversionReport && conversionReport.success">✅</span>
+                            <span v-else>❌</span>
+                        </div>
+                        <h2 class="report-title">
+                            {{ conversionReport && conversionReport.success ? 'Conversion Complete' : 'Conversion Failed' }}
+                        </h2>
+                        <button class="close-btn" @click="closeConversionReport">&times;</button>
+                    </div>
+
+                    <div class="report-content">
+                        <div v-if="conversionReport && conversionReport.success" class="success-report">
+                            <div class="report-summary">
+                                <p class="report-message">{{ conversionReport.message }}</p>
+                            </div>
+                            
+                            <div class="report-stats">
+                                <div class="stat-grid">
+                                    <div class="stat-card total">
+                                        <div class="stat-number">{{ conversionReport.totalFiles }}</div>
+                                        <div class="stat-label">Total Files</div>
+                                    </div>
+                                    <div class="stat-card converted">
+                                        <div class="stat-number">{{ conversionReport.convertedFiles }}</div>
+                                        <div class="stat-label">Converted</div>
+                                    </div>
+                                    <div class="stat-card skipped">
+                                        <div class="stat-number">{{ conversionReport.skippedFiles }}</div>
+                                        <div class="stat-label">Skipped</div>
+                                    </div>
+                                    <div class="stat-card errors">
+                                        <div class="stat-number">{{ conversionReport.errorFiles }}</div>
+                                        <div class="stat-label">Errors</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="report-info">
+                                <div class="info-item">
+                                    <span class="info-icon">📁</span>
+                                    <span>JSON files are created alongside W3G files for faster analysis</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-icon">⚡</span>
+                                    <span>Future analysis will be much faster using cached JSON data</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-icon">🔄</span>
+                                    <span>Files are automatically skipped if JSON is up to date</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div v-else class="error-report">
+                            <div class="error-message">
+                                <h3>Error Details</h3>
+                                <p>{{ conversionReport && conversionReport.error }}</p>
+                            </div>
+                            <div class="error-suggestions">
+                                <h4>Possible Solutions:</h4>
+                                <ul>
+                                    <li>Check if W3G files are valid and not corrupted</li>
+                                    <li>Ensure you have write permissions in the directory</li>
+                                    <li>Try converting individual files to identify problematic ones</li>
+                                    <li>Check server logs for detailed error information</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report-actions">
+                        <button class="report-btn primary" @click="closeConversionReport">
+                            {{ conversionReport && conversionReport.success ? '✓ Got it' : '🔄 Try Again' }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

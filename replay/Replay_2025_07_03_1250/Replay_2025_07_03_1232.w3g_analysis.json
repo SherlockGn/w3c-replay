@@ -1,0 +1,341 @@
+{
+  "filename": "C:\\Users\\tianheg\\Documents\\coding\\w3c-replay\\replay\\Replay_2025_07_03_1250\\Replay_2025_07_03_1232.w3g",
+  "game": {
+    "player_count": 4,
+    "name": "å½å°å±åç½åçæ¸¸æ (Fr",
+    "speed": "Fast",
+    "visibility": "Default",
+    "observers": "No Observers",
+    "teams_together": true,
+    "lock_teams": true,
+    "full_shared_unit_control": false,
+    "random_hero": false,
+    "random_races": false,
+    "creator": "FrostTear",
+    "map": "Maps\\FrozenThrone\\(4)TwistedMeadows.w3x",
+    "slots": 4,
+    "type": "Custom game",
+    "private": false,
+    "record_id": 25,
+    "record_length": 43,
+    "slot_records": 4,
+    "random_seed": 2595078,
+    "select_mode": "Team & race selectable",
+    "start_spots": 4,
+    "loser_team": 0,
+    "saver_id": 4,
+    "saver_name": "Neko",
+    "winner_team": 1
+  },
+  "teams": [
+    {
+      "1": {
+        "player_id": 1,
+        "initiator": true,
+        "name": "FrostTear",
+        "actions_details": {
+          "Right click": 24,
+          "Select / deselect": 31,
+          "Select group hotkey": 0,
+          "Assign group hotkey": 3,
+          "Use ability": 4,
+          "Basic commands": 0,
+          "Build / train": 5,
+          "Enter build submenu": 5,
+          "Enter hero's abilities submenu": 0,
+          "Select subgroup": 0,
+          "Give item / drop item": 0,
+          "Remove unit from queue": 0,
+          "ESC pressed": 0
+        },
+        "hotkeys": {
+          "2": {
+            "assigned": 1,
+            "last_totalitems": 1
+          },
+          "4": {
+            "assigned": 2,
+            "last_totalitems": 1
+          }
+        },
+        "units": {
+          "order": {
+            "913": "1 Peasant",
+            "6506": "1 Peasant",
+            "19131": "1 Peasant",
+            "39428": "1 Peasant",
+            "59116": "1 Peasant"
+          },
+          "Peasant": 5
+        },
+        "heroes": {
+          "order": {}
+        },
+        "buildings": {
+          "order": {
+            "31584": "Altar of Kings",
+            "33475": "Blacksmith",
+            "41631": "Farm",
+            "50616": "Barracks"
+          },
+          "Altar of Kings": 1,
+          "Blacksmith": 1,
+          "Farm": 1,
+          "Barracks": 1
+        },
+        "items": {
+          "order": {}
+        },
+        "upgrades": {
+          "order": {}
+        },
+        "actions": 72,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 0,
+        "color": "red",
+        "race": "Random",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 1,
+        "race_detected": "Human",
+        "units_time": 59116,
+        "time": 78897,
+        "leave_reason": 12,
+        "leave_result": 7,
+        "apm": 54.75493364766721
+      },
+      "4": {
+        "player_id": 4,
+        "initiator": false,
+        "name": "Neko",
+        "actions_details": {
+          "Right click": 22,
+          "Select / deselect": 27,
+          "Select group hotkey": 0,
+          "Assign group hotkey": 0,
+          "Use ability": 3,
+          "Basic commands": 0,
+          "Build / train": 5,
+          "Enter build submenu": 6,
+          "Enter hero's abilities submenu": 0,
+          "Select subgroup": 0,
+          "Give item / drop item": 0,
+          "Remove unit from queue": 0,
+          "ESC pressed": 0
+        },
+        "hotkeys": {},
+        "units": {
+          "order": {
+            "12819": "1 Peon",
+            "13116": "1 Peon",
+            "47506": "1 Peon",
+            "74147": "1 Peon"
+          },
+          "Peon": 4
+        },
+        "heroes": {
+          "order": {
+            "70928": "Blademaster"
+          },
+          "Blademaster": {
+            "revivals": 1
+          }
+        },
+        "buildings": {
+          "order": {
+            "4897": "Altar of Storms",
+            "8303": "Orc Burrow",
+            "31069": "Barracks"
+          },
+          "Altar of Storms": 1,
+          "Orc Burrow": 1,
+          "Barracks": 1
+        },
+        "items": {
+          "order": {}
+        },
+        "upgrades": {
+          "order": {}
+        },
+        "actions": 63,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 0,
+        "color": "blue",
+        "race": "Random",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 1,
+        "race_detected": "Orc",
+        "units_time": 74147,
+        "time": 78897,
+        "leave_reason": 12,
+        "leave_result": 7,
+        "apm": 47.91056694170881
+      }
+    },
+    {
+      "2": {
+        "player_id": 2,
+        "initiator": false,
+        "name": "jians",
+        "actions_details": {
+          "Right click": 43,
+          "Select / deselect": 33,
+          "Select group hotkey": 5,
+          "Assign group hotkey": 2,
+          "Use ability": 5,
+          "Basic commands": 0,
+          "Build / train": 3,
+          "Enter build submenu": 6,
+          "Enter hero's abilities submenu": 0,
+          "Select subgroup": 0,
+          "Give item / drop item": 0,
+          "Remove unit from queue": 0,
+          "ESC pressed": 0
+        },
+        "hotkeys": {
+          "3": {
+            "assigned": 1,
+            "last_totalitems": 1,
+            "used": 4
+          },
+          "5": {
+            "assigned": 1,
+            "last_totalitems": 1,
+            "used": 1
+          }
+        },
+        "units": {
+          "order": {
+            "2194": "1 Acolyte",
+            "19022": "1 Acolyte",
+            "69741": "1 Ghoul"
+          },
+          "Acolyte": 2,
+          "Ghoul": 1
+        },
+        "heroes": {
+          "order": {}
+        },
+        "buildings": {
+          "order": {
+            "5506": "Crypt",
+            "11303": "Graveyard",
+            "37741": "Ziggurat",
+            "56209": "Altar of Darkness",
+            "58209": "Altar of Darkness"
+          },
+          "Crypt": 1,
+          "Graveyard": 1,
+          "Ziggurat": 1,
+          "Altar of Darkness": 2
+        },
+        "items": {
+          "order": {}
+        },
+        "upgrades": {
+          "order": {}
+        },
+        "actions": 97,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 1,
+        "color": "green",
+        "race": "Random",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 1,
+        "race_detected": "Undead",
+        "units_time": 69741,
+        "time": 72428,
+        "leave_reason": 1,
+        "leave_result": 1,
+        "apm": 80.35566355553101
+      },
+      "3": {
+        "player_id": 3,
+        "initiator": false,
+        "name": "txd",
+        "actions_details": {
+          "Right click": 17,
+          "Select / deselect": 74,
+          "Select group hotkey": 0,
+          "Assign group hotkey": 0,
+          "Use ability": 5,
+          "Basic commands": 0,
+          "Build / train": 7,
+          "Enter build submenu": 5,
+          "Enter hero's abilities submenu": 0,
+          "Select subgroup": 0,
+          "Give item / drop item": 0,
+          "Remove unit from queue": 0,
+          "ESC pressed": 0
+        },
+        "hotkeys": {},
+        "units": {
+          "order": {
+            "3288": "1 Wisp",
+            "16131": "1 Wisp",
+            "26069": "1 Wisp",
+            "52319": "1 Wisp",
+            "52506": "1 Wisp",
+            "56819": "1 Wisp",
+            "57428": "1 Wisp"
+          },
+          "Wisp": 7
+        },
+        "heroes": {
+          "order": {}
+        },
+        "buildings": {
+          "order": {
+            "7803": "Altar of Elders",
+            "13209": "Moon Well",
+            "50397": "Ancient of War"
+          },
+          "Altar of Elders": 1,
+          "Moon Well": 1,
+          "Ancient of War": 1
+        },
+        "items": {
+          "order": {}
+        },
+        "upgrades": {
+          "order": {}
+        },
+        "actions": 108,
+        "slot_status": 2,
+        "computer": 0,
+        "team": 1,
+        "color": "yellow",
+        "race": "Random",
+        "ai_strength": "Normal",
+        "handicap": 100,
+        "retraining_time": 0,
+        "units_multiplier": 1,
+        "race_detected": "NightElf",
+        "units_time": 57428,
+        "time": 78897,
+        "leave_reason": 12,
+        "leave_result": 7,
+        "apm": 82.13240047150082
+      }
+    }
+  ],
+  "chat": [],
+  "header": {
+    "intro": "Warcraft III recorded game\u001a",
+    "c_size": 9328,
+    "ident": "W3XP",
+    "major_v": 27,
+    "build_v": 6059,
+    "length": 78875,
+    "checksum": 767963981,
+    "minor_v": 0
+  }
+}
