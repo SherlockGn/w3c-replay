@@ -4,7 +4,7 @@ const path = require('path')
 const W3GReplay = require('w3g')
 
 const app = express()
-const PORT = 3000
+const PORT = 3010
 
 // Player Name Mapper - Edit this object to map different names to the same player
 // This affects dashboard statistics and file previews by grouping name variations
