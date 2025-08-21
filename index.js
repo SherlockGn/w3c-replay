@@ -423,14 +423,47 @@ function processGameData(gameData, stats) {
     if (!gameData.teams || !Array.isArray(gameData.teams)) return
     
     const winnerTeam = gameData.game.winner_team
+    const recorderName = gameData.game.saver_name
+    let recorderLeftEarly = false
+    let recorderTeam = null
     
+    // First pass: Check if recorder left early and get recorder's team
+    gameData.teams.forEach(team => {
+        if (team !== null && typeof team === 'object') {
+            Object.values(team).forEach(player => {
+                if (player && player.name === recorderName) {
+                    recorderTeam = player.team
+                    // Check if recorder left early (leave_reason 12 typically means they left before game ended)
+                    if (player.leave_reason === 12) {
+                        recorderLeftEarly = true
+                    }
+                }
+            })
+        }
+    })
+    
+    // Second pass: Process player stats with adjusted win/loss logic
     gameData.teams.forEach(team => {
         if (team !== null && typeof team === 'object') {
             Object.values(team).forEach(player => {
                 if (player && player.actions > 0) {
                     const originalPlayerName = player.name
                     const playerName = normalizePlayerName(originalPlayerName)  // Use normalized name
-                    const isWinner = player.team === winnerTeam
+                    
+                    // Determine if player is winner based on standard logic or the early-leave logic
+                    let isWinner = player.team === winnerTeam
+                    
+                    // If recorder left early, adjust the win/loss result
+                    if (recorderLeftEarly) {
+                        // If this is the recorder or recorder's teammate, they lose
+                        if (player.team === recorderTeam) {
+                            isWinner = false
+                        } else {
+                            // Opponents of recorder win
+                            isWinner = true
+                        }
+                    }
+                    
                     const race = player.race_detected || player.race
                     
                     // Initialize player stats with minimal structure
